@@ -854,13 +854,7 @@
                             <div ng-if="screenSize.getScreenSize() >= screenSize.screenSizes.sm"
                                  class="qty-and-add-cart-container row ng-scope" style="">
                                     <div class="button-container">
-                                        <!-- ngIf: campaign.customizationType !== 'CUSTOMILY' -->
-                                        <button ng-if="campaign.customizationType !== 'CUSTOMILY'"
-                                                class="btn btn-cc btn-spinner buy-it-now-btn add-to-cart-btn custom-theme-btn ng-binding ng-scope"
-                                                ng-click="addCartBtn()">Next step: Add your name
-                                        </button>
-                                        <!-- end ngIf: campaign.customizationType !== 'CUSTOMILY' -->
-                                        <!-- ngIf: campaign.customizationType === 'CUSTOMILY' -->
+                                        <a id="nextstep" class="btn btn-cc btn-spinner buy-it-now-btn add-to-cart-btn custom-theme-btn ng-binding ng-scope" href="https://olivas.shop/i-walked-the-walk-us-army-veteran-01005b?s=hanes-5250&c=Black&p=FRONT&pr=10">Next step: Add your name</a>
                                     </div>
                             </div>
                             <!-- end ngIf: screenSize.getScreenSize() >= screenSize.screenSizes.sm -->
@@ -916,7 +910,7 @@
 	document.querySelectorAll(".swatch-container").forEach(function(swatchContainer) {
 	  swatchContainer.querySelector(".mswatch:first-child input").click();
 	});
-	var arr = '------'.split('');
+	var arr = '01005b'.split('');
 	var radios = document.querySelectorAll('.swatch-container input[type=radio]');
 	document.getElementById("productImageId").onload = function() {
 		this.style.opacity = 1;
@@ -929,13 +923,17 @@
 			}
 		});
 		var variant = arr.join('');
+		
 		console.log(variant);
+		
+		var new_href = "https://olivas.shop/i-walked-the-walk-us-army-veteran-"+variant+"?s=hanes-5250&c=Black&p=FRONT&pr=10";
+		console.log(new_href);
+		document.getElementById('nextstep').setAttribute('href',new_href);
 		img_data = data[variant];
 		var img_src = 'https://banksy.gearint.com/mockuplite?overlayPath=https%3A%2F%2Fgearlaunch-product-images.imgix.net%2Fimg%2Fproduct%2FCanvasPrint-8x10-v2_94a469c1b4.png&artPath=https%3A%2F%2Fgearlaunch-prod-imgix-secure.imgix.net%2F'+img_data.replace('|','%3Ffit%3Dclamp%26bg%3D000000%26ixlib%3Djava-1.1.0%26s%3D')+'&offsetX=138&offsetY=87&imageWidth=424&bgColor=000000&mockupWidth=700';
 	   document.getElementById("productImageId").src = img_src;
 	   document.getElementById("productImageId").style.opacity = 0;
 	}));
-	
 	//mobile menu
 	document.querySelector("#openMobileMenu").addEventListener("click", function() {
 	  document.querySelector(".mobile-menu").classList.add("open");
@@ -943,14 +941,6 @@
 	document.querySelector("#mobileMenuclose").addEventListener("click", function() {
 	  document.querySelector(".mobile-menu").classList.remove("open");
 	});
-
-	var variant =  "zzzzzz-7";
-	/*
-	document.getElementById("change_design").addEventListener("click", function() {
-		if(variant=="zzzzzz-7")variant= "yyyyyy-7";else variant= "zzzzzz-7";
-		
-	});
-	*/
 </script>
 <!-- BS IE10/WinPhone8 workaround -->
 <script type="text/javascript">
