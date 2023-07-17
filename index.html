@@ -411,18 +411,15 @@
                                     <div class="ng-scope"
                                          ng-if="!isSmallWindow()" style="">
                                         <!-- ngIf: !productMock.isSelected -->
-                                        <div id="productImageHolder" ng-if="!productMock.isSelected" class="ng-scope">
-                                            <span
-                                                ng-if="model.variant.isDoubleSided"
-                                                class="ng-scope">
-												<img id="productImageId"
-                                                     class="img-responsive prod-img img-responsive-fix"
-                                                     src="https://banksy.gearint.com/mockuplite?overlayPath=https%3A%2F%2Fgearlaunch-product-images.imgix.net%2Fimg%2Fproduct%2FCanvasPrint-8x10-v2_94a469c1b4.png&artPath=https%3A%2F%2Fgearlaunch-prod-imgix-secure.imgix.net%2F82fdb7c4-344f-43db-8c29-09eff112d5a2%3Ffit%3Dclamp%26bg%3D000000%26ixlib%3Djava-1.1.0%26s%3D52a65354d697fcd2982590e607c5006d&offsetX=138&offsetY=87&imageWidth=424&bgColor=000000&mockupWidth=700">
-											</span>
-                                            <div ng-show="prodLoading"
-                                                 class="loading-spinner ng-hide">
-                                                <div class="loader custom-theme-loader"></div>
-                                            </div>
+                                        <div id="productImageHolder">
+											<div id="drawit">
+												<img src="bg.jpg"/>
+												<img id="img2" src="2/0.png" style="left: 298px;top: 253px;"/>
+												<img id="img3" src="3/0.png" style="left: 295px;top: 319px;"/>
+												<img id="img4-5" src="4/5/b.png" style="left: 298px;top: 223px;"/>
+												<img id="img0" src="0/1.png" style="left: 344px;top: 294px;"/>
+												<img id="img1" src="1/0.png" style="left: 330px;top: 288px;"/>
+											</div>
                                         </div><!-- end ngIf: !productMock.isSelected -->
                                         <!-- ngIf: productMock.isSelected -->
                                     </div><!-- end ngIf: !isSmallWindow() -->
@@ -767,13 +764,13 @@
                                         <div class="col-md-12">
 											<h4 class="product-label">Face's Woman</h4>
 											<div class="swatch-container">
-											   <div class="mswatch"><input id="face0" type="radio" name="1" value="1"> <label for="face0" tabindex="0" ><img src="https://cdn.customily.com/shopify/assetFiles/swatches/interestpod.myshopify.com/f9eb7ef4-510d-44fd-858e-b64ad5467623/159/7e1487cf-0852-4c64-b3b5-6434a3ba607d.png" loading="lazy" width="40" height="40" alt="swatch image style"></label></div>
-											   <div class="mswatch"><input id="face1" type="radio" name="1" value="0"> <label for="face1"  tabindex="0"><img src="https://cdn.customily.com/shopify/assetFiles/swatches/interestpod.myshopify.com/f9eb7ef4-510d-44fd-858e-b64ad5467623/159/62dc946e-c1c6-4e30-93c6-8af261b5b8a6.png" loading="lazy" width="40" height="40" alt="swatch image style"></label></div>
+											   <div class="mswatch"><input id="face0" type="radio" name="0" value="1"> <label for="face0" tabindex="0" ><img src="https://cdn.customily.com/shopify/assetFiles/swatches/interestpod.myshopify.com/f9eb7ef4-510d-44fd-858e-b64ad5467623/159/7e1487cf-0852-4c64-b3b5-6434a3ba607d.png"></label></div>
+											   <div class="mswatch"><input id="face1" type="radio" name="0" value="0"> <label for="face1"  tabindex="0"><img src="https://cdn.customily.com/shopify/assetFiles/swatches/interestpod.myshopify.com/f9eb7ef4-510d-44fd-858e-b64ad5467623/159/62dc946e-c1c6-4e30-93c6-8af261b5b8a6.png"></label></div>
 											</div>
 											
 											<h4 class="product-label">Choose Glasses</h4>
-											<div class="swatch-container"><div class="mswatch"><input id="gl-0" type="radio" name="0" value="0"> <label for="gl-0" tabindex="0" ><img src="https://cdn.customily.com/shopify/assetFiles/swatches/interestpod.myshopify.com/f9eb7ef4-510d-44fd-858e-b64ad5467623/171/28ea6664-7748-4bad-904c-c1d19651a0e8.png" loading="lazy" width="40" height="40" alt="swatch image style" ></label></div>
-											<div class="mswatch"><input id="gl-1" type="radio" name="0" value="1"> <label for="gl-1" tabindex="0" ><img src="https://cdn.customily.com/shopify/assetFiles/swatches/interestpod.myshopify.com/f9eb7ef4-510d-44fd-858e-b64ad5467623/171/be19fb95-ff9f-42b2-ba29-5310e4e94915.png" loading="lazy" width="40" height="40" alt="swatch image style" ></label></div></div>
+											<div class="swatch-container"><div class="mswatch"><input id="gl-0" type="radio" name="1" value="0"> <label for="gl-0" tabindex="0" ><img src="https://cdn.customily.com/shopify/assetFiles/swatches/interestpod.myshopify.com/f9eb7ef4-510d-44fd-858e-b64ad5467623/171/28ea6664-7748-4bad-904c-c1d19651a0e8.png" ></label></div>
+											<div class="mswatch"><input id="gl-1" type="radio" name="1" value="1"> <label for="gl-1" tabindex="0" ><img src="https://cdn.customily.com/shopify/assetFiles/swatches/interestpod.myshopify.com/f9eb7ef4-510d-44fd-858e-b64ad5467623/171/be19fb95-ff9f-42b2-ba29-5310e4e94915.png" ></label></div></div>
 											
                                             <h4 class="product-label">Choose Woman Skin Tone</h4>
 											<div class="swatch-container"><div class="mswatch"><input id="sk1" type="radio" name="2" value="0"> <label for="sk1" style="background-color: rgb(253, 221, 196);" tabindex="0"><!----></label></div><div class="mswatch"><input id="sk2" type="radio" name="2" value="1"> <label for="sk2" style="background-color: rgb(240, 179, 135);" tabindex="0"><!----></label></div><div class="mswatch"><input id="sk4" type="radio" name="2" value="2"> <label for="sk4" style="background-color: rgb(168, 108, 75);" tabindex="0"><!----></label></div><div class="mswatch"><input id="sk3" type="radio" name="2" value="3"> <label for="sk3" style="background-color: rgb(117, 51, 27);" tabindex="0"><!----></label></div></div>
@@ -789,24 +786,25 @@
 											</div>
 											
 											<h4>Woman Hairstyle - Silver</h4>
-											<div class="swatch-container">
-												<div class="mswatch"><input id="cl-11" type="radio" name="5" value="b"> <label for="cl-11" tabindex="0"><img src="https://cdn.customily.com/shopify/assetFiles/swatches/interestpod.myshopify.com/f9eb7ef4-510d-44fd-858e-b64ad5467623/167/751eb493-5d10-4e88-8d24-6132e331e44f.png" loading="lazy" width="40" height="40" alt="swatch image style"></label></div>
-												<div class="mswatch"><input id="cl-0" type="radio" name="5" value="0" data-gtm-form-interact-field-id="0"> <label for="cl-0" tabindex="0"><img src="https://cdn.customily.com/shopify/assetFiles/swatches/interestpod.myshopify.com/f9eb7ef4-510d-44fd-858e-b64ad5467623/167/1b28cbef-01b1-4350-8518-5e57b7f679e8.png" loading="lazy" width="40" height="40" alt="swatch image style"></label></div>
-												<div class="mswatch"><input id="cl-1" type="radio" name="5" value="1"> <label for="cl-1" tabindex="0"><img src="https://cdn.customily.com/shopify/assetFiles/swatches/interestpod.myshopify.com/f9eb7ef4-510d-44fd-858e-b64ad5467623/167/108f9473-29f0-407b-bbd4-550c97d2b9ad.png" loading="lazy" width="40" height="40" alt="swatch image style"></label></div>
-												<div class="mswatch"><input id="cl-2" type="radio" name="5" value="2"> <label for="cl-2" tabindex="0"><img src="https://cdn.customily.com/shopify/assetFiles/swatches/interestpod.myshopify.com/f9eb7ef4-510d-44fd-858e-b64ad5467623/167/c7d85771-3fc9-43da-8102-4f27b629d5e8.png" loading="lazy" width="40" height="40" alt="swatch image style"></label></div>
-												<div class="mswatch"><input id="cl-3" type="radio" name="5" value="3"> <label for="cl-3" tabindex="0"><img src="https://cdn.customily.com/shopify/assetFiles/swatches/interestpod.myshopify.com/f9eb7ef4-510d-44fd-858e-b64ad5467623/167/71b2eb9f-d7c5-4b8b-b9e9-df4fd647a536.png" loading="lazy" width="40" height="40" alt="swatch image style"></label></div>
-												<div class="mswatch"><input id="cl-4" type="radio" name="5" value="4"> <label for="cl-4" tabindex="0"><img src="https://cdn.customily.com/shopify/assetFiles/swatches/interestpod.myshopify.com/f9eb7ef4-510d-44fd-858e-b64ad5467623/167/754780ac-c04f-4e90-a96e-f1a4445e027f.png" loading="lazy" width="40" height="40" alt="swatch image style"></label></div>
-												<div class="mswatch"><input id="cl-5" type="radio" name="5" value="5"> <label for="cl-5" tabindex="0"><img src="https://cdn.customily.com/shopify/assetFiles/swatches/interestpod.myshopify.com/f9eb7ef4-510d-44fd-858e-b64ad5467623/167/1765f6be-faab-4e96-891c-a5ca1677c7e1.png" loading="lazy" width="40" height="40" alt="swatch image style"></label></div>
-												<div class="mswatch"><input id="cl-6" type="radio" name="5" value="6"> <label for="cl-6" tabindex="0"><img src="https://cdn.customily.com/shopify/assetFiles/swatches/interestpod.myshopify.com/f9eb7ef4-510d-44fd-858e-b64ad5467623/167/379a51ca-4815-4e53-9237-3c9c8e988331.png" loading="lazy" width="40" height="40" alt="swatch image style"></label></div>
-												<div class="mswatch"><input id="cl-7" type="radio" name="5" value="7"> <label for="cl-7" tabindex="0"><img src="https://cdn.customily.com/shopify/assetFiles/swatches/interestpod.myshopify.com/f9eb7ef4-510d-44fd-858e-b64ad5467623/167/73268c06-a332-4c94-9061-11ca9ef76eb6.png" loading="lazy" width="40" height="40" alt="swatch image style"></label></div>
-												<div class="mswatch"><input id="cl-8" type="radio" name="5" value="8"> <label for="cl-8" tabindex="0"><img src="https://cdn.customily.com/shopify/assetFiles/swatches/interestpod.myshopify.com/f9eb7ef4-510d-44fd-858e-b64ad5467623/167/2d7389d3-b5c3-4239-ac21-3a41871d749b.png" loading="lazy" width="40" height="40" alt="swatch image style"></label></div>
-												<div class="mswatch"><input id="cl-9" type="radio" name="5" value="9"> <label for="cl-9" tabindex="0"><img src="https://cdn.customily.com/shopify/assetFiles/swatches/interestpod.myshopify.com/f9eb7ef4-510d-44fd-858e-b64ad5467623/167/5f31ea77-4245-49f5-b6e4-cdb65c6c64b6.png" loading="lazy" width="40" height="40" alt="swatch image style"></label></div>
-												<div class="mswatch"><input id="cl-10" type="radio" name="5" value="a"> <label for="cl-10" tabindex="0"><img src="https://cdn.customily.com/shopify/assetFiles/swatches/interestpod.myshopify.com/f9eb7ef4-510d-44fd-858e-b64ad5467623/167/46a7639d-aa4a-411c-89ac-8bcb3b11e3da.png" loading="lazy" width="40" height="40" alt="swatch image style"></label></div>
-												<div class="mswatch"><input id="cl-12" type="radio" name="5" value="c"> <label for="cl-12" tabindex="0"><img src="https://cdn.customily.com/shopify/assetFiles/swatches/interestpod.myshopify.com/f9eb7ef4-510d-44fd-858e-b64ad5467623/171/be19fb95-ff9f-42b2-ba29-5310e4e94915.png" loading="lazy" width="40" height="40" alt="swatch image style"></label></div>
+											<div class="swatch-container hair">
+												<div class="mswatch"><input id="cl-b" type="radio" name="5" value="b"> <label for="cl-b" tabindex="0"><img src="4/5/b.png" style=" width: 46px;margin-top: -10px;margin-left: 3px;
+"></label></div>
+												<div class="mswatch"><input id="cl-0" type="radio" name="5" value="0"> <label for="cl-0" tabindex="0"><img src="4/5/0.png" style="width: 65px;margin-top: -10px;margin-left: -3px;"></label></div>
+												<div class="mswatch"><input id="cl-1" type="radio" name="5" value="1"> <label for="cl-1" tabindex="0"><img src="4/5/1.png" style="margin-top: -7px;margin-left: 2px;"></label></div>
+												<div class="mswatch"><input id="cl-2" type="radio" name="5" value="2"> <label for="cl-2" tabindex="0"><img src="4/5/2.png" style="width: 67px;margin-top: 3px;margin-left: -4px;"></label></div>
+												<div class="mswatch"><input id="cl-3" type="radio" name="5" value="3"> <label for="cl-3" tabindex="0"><img src="4/5/3.png" style="margin-top:-4px;width:47px;margin-left:4px"></label></div>
+												<div class="mswatch"><input id="cl-4" type="radio" name="5" value="4"> <label for="cl-4" tabindex="0"><img src="4/5/4.png" style="width:77px;margin-top:-13px;margin-left:-10px"></label></div>
+												<div class="mswatch"><input id="cl-5" type="radio" name="5" value="5"> <label for="cl-5" tabindex="0"><img src="4/5/5.png" style="width:87px;margin-top:-10px;margin-left:-13px"></label></div>
+												<div class="mswatch"><input id="cl-6" type="radio" name="5" value="6"> <label for="cl-6" tabindex="0"><img src="4/5/6.png" style="width:87px;margin-top:-10px;margin-left:-13px"></label></div>
+												<div class="mswatch"><input id="cl-7" type="radio" name="5" value="7"> <label for="cl-7" tabindex="0"><img src="4/5/7.png" style="width:87px;margin-top:-10px;margin-left:-13px"></label></div>
+												<div class="mswatch"><input id="cl-8" type="radio" name="5" value="8"> <label for="cl-8" tabindex="0"><img src="4/5/8.png" style="width:87px;margin-top:-10px;margin-left:-13px"></label></div>
+												<div class="mswatch"><input id="cl-9" type="radio" name="5" value="9"> <label for="cl-9" tabindex="0"><img src="4/5/9.png" style="width: 50px;margin-top: -8px;margin-left: 4px;"></label></div>
+												<div class="mswatch"><input id="cl-a" type="radio" name="5" value="a"> <label for="cl-a" tabindex="0"><img src="4/5/a.png" style="width: 50px;margin-top: -7px;margin-left: 4px;"></label></div>
+												<div class="mswatch"><input id="cl-c" type="radio" name="5" value="c"> <label for="cl-c" tabindex="0"><img src="4/5/c.png"></label></div>
 											</div>
 											
 											<h4 class="product-label">Choose Shirt</h4>
-											<div class="swatch-container"><div class="mswatch"><input id="sh-0" type="radio" name="3" value="0" data-gtm-form-interact-field-id="0"> <label for="sh-0" tabindex="0" ><img src="https://cdn.customily.com/shopify/assetFiles/swatches/interestpod.myshopify.com/f9eb7ef4-510d-44fd-858e-b64ad5467623/169/0e08b202-6e1e-4bdb-86f2-b3d946113ce4.png" loading="lazy" width="40" height="40" alt="swatch image style" ></label></div><div class="mswatch"><input id="sh-2" type="radio" name="3" value="1" data-gtm-form-interact-field-id="1"> <label for="sh-2" tabindex="0" ><img src="https://cdn.customily.com/shopify/assetFiles/swatches/interestpod.myshopify.com/f9eb7ef4-510d-44fd-858e-b64ad5467623/169/7aea5c51-0e81-4d6d-94f6-a51b8acf9f43.png" loading="lazy" width="40" height="40" alt="swatch image style" ></label></div><div class="mswatch"><input id="sh-4" type="radio" name="3" value="2" data-gtm-form-interact-field-id="2"> <label for="sh-4" tabindex="0" ><img src="https://cdn.customily.com/shopify/assetFiles/swatches/interestpod.myshopify.com/f9eb7ef4-510d-44fd-858e-b64ad5467623/169/42f14d0d-b4b3-491b-a6f3-4245019d06c5.png" loading="lazy" width="40" height="40" alt="swatch image style" ></label></div></div>
+											<div class="swatch-container"><div class="mswatch"><input id="sh-0" type="radio" name="3" value="0" data-gtm-form-interact-field-id="0"> <label for="sh-0" tabindex="0" ><img src="https://cdn.customily.com/shopify/assetFiles/swatches/interestpod.myshopify.com/f9eb7ef4-510d-44fd-858e-b64ad5467623/169/0e08b202-6e1e-4bdb-86f2-b3d946113ce4.png" ></label></div><div class="mswatch"><input id="sh-2" type="radio" name="3" value="1" data-gtm-form-interact-field-id="1"> <label for="sh-2" tabindex="0" ><img src="https://cdn.customily.com/shopify/assetFiles/swatches/interestpod.myshopify.com/f9eb7ef4-510d-44fd-858e-b64ad5467623/169/7aea5c51-0e81-4d6d-94f6-a51b8acf9f43.png" ></label></div><div class="mswatch"><input id="sh-4" type="radio" name="3" value="2" data-gtm-form-interact-field-id="2"> <label for="sh-4" tabindex="0" ><img src="https://cdn.customily.com/shopify/assetFiles/swatches/interestpod.myshopify.com/f9eb7ef4-510d-44fd-858e-b64ad5467623/169/42f14d0d-b4b3-491b-a6f3-4245019d06c5.png" ></label></div></div>
                                         </div>
                                     </div><!-- end ngIf: model.color.sizes.length > 0 &&
 													!model.variant.productCategory.groupBySubCategory -->
@@ -910,11 +908,14 @@
 	document.querySelectorAll(".swatch-container").forEach(function(swatchContainer) {
 	  swatchContainer.querySelector(".mswatch:first-child input").click();
 	});
-	var arr = '01005b'.split('');
+	
 	var radios = document.querySelectorAll('.swatch-container input[type=radio]');
+	/*
 	document.getElementById("productImageId").onload = function() {
 		this.style.opacity = 1;
 	};
+	*/
+	var arr = '01005b'.split('');
     radios.forEach(radio => radio.addEventListener('change', function(){
 		console.log('name:',radio.name,'value:',radio.value);
 		radios.forEach(_radio=>{
@@ -923,16 +924,25 @@
 			}
 		});
 		var variant = arr.join('');
-		
+		if(radio.name=="4"||radio.name=="5"){
+			if(radio.name=="4"){
+				document.getElementById('img4-5').setAttribute('src','4/'+arr[4]+'/'+arr[5]+'.png'); // vẽ lại tóc cho nhân vật
+				const images = document.querySelectorAll('div.swatch-container.hair label img');
+				images.forEach(function(img) {
+				  const imgName = img.getAttribute('src').split('/')[2];
+				  const newUrl = '4/' + radio.value + '/' + imgName;
+				  img.setAttribute('src', newUrl);
+				});
+			}
+			document.getElementById('img4-5').setAttribute('src','4/'+arr[4]+'/'+arr[5]+'.png');
+		}else{
+			document.getElementById('img'+radio.name).setAttribute('src',radio.name+'/'+radio.value+'.png');
+		}
 		console.log(variant);
 		
 		var new_href = "https://olivas.shop/i-walked-the-walk-us-army-veteran-"+variant+"?s=hanes-5250&c=Black&p=FRONT&pr=10";
 		console.log(new_href);
 		document.getElementById('nextstep').setAttribute('href',new_href);
-		img_data = data[variant];
-		var img_src = 'https://banksy.gearint.com/mockuplite?overlayPath=https%3A%2F%2Fgearlaunch-product-images.imgix.net%2Fimg%2Fproduct%2FCanvasPrint-8x10-v2_94a469c1b4.png&artPath=https%3A%2F%2Fgearlaunch-prod-imgix-secure.imgix.net%2F'+img_data.replace('|','%3Ffit%3Dclamp%26bg%3D000000%26ixlib%3Djava-1.1.0%26s%3D')+'&offsetX=138&offsetY=87&imageWidth=424&bgColor=000000&mockupWidth=700';
-	   document.getElementById("productImageId").src = img_src;
-	   document.getElementById("productImageId").style.opacity = 0;
 	}));
 	//mobile menu
 	document.querySelector("#openMobileMenu").addEventListener("click", function() {
@@ -941,6 +951,32 @@
 	document.querySelector("#mobileMenuclose").addEventListener("click", function() {
 	  document.querySelector(".mobile-menu").classList.remove("open");
 	});
+	// resize wrapper (height)
+	function resizeDiv() {
+	  var myDiv = document.getElementById('productImageHolder');
+	  var width = myDiv.offsetWidth;
+	  myDiv.style.height = width*741 / 700 + 'px';
+	}
+	window.addEventListener('resize', resizeDiv);
+	resizeDiv();
+	/* resize the canvas follow the windows size */
+	var el = document.getElementById('drawit');
+	var elHeight = el.offsetHeight;
+	var elWidth = el.offsetWidth;
+	var wrapper = document.getElementById('productImageHolder');
+	var scale;
+
+	function reportWindowSize() {
+	  scale = Math.min(
+		wrapper.offsetWidth / elWidth,
+		wrapper.offsetHeight / elHeight
+	  );
+	  el.style.transform =
+		 'scale(' + scale + ')';
+	}
+	reportWindowSize();
+	window.onresize = reportWindowSize;
+
 </script>
 <!-- BS IE10/WinPhone8 workaround -->
 <script type="text/javascript">

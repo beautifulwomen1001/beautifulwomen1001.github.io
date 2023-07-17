@@ -1,6 +1,4 @@
-#productImageHolder{
-	background: url(https://upload.wikimedia.org/wikipedia/commons/b/b1/Loading_icon.gif) no-repeat center;
-}
+
 .swatch-container{
     display: flex;
     flex-wrap: wrap;
@@ -27,9 +25,15 @@
 	height: 60px;
 	background-color: transparent;
 }
+.swatch-container.hair label{
+	overflow:hidden;
+}
 .swatch-container label img{
 	width: 54px;
 	height: 54px;
+}
+.swatch-container.hair label img{
+	height:auto;
 }
 .swatch-container input:checked ~ label {
     border: #1871ed 3px solid!important;
@@ -46,3 +50,19 @@
     background-color: transparent;
     right: 5px;
 }
+#productImageHolder{
+	background: url(https://upload.wikimedia.org/wikipedia/commons/b/b1/Loading_icon.gif) no-repeat center;
+	
+}
+#drawit {
+	width:700px;
+	height:741px;
+    position: relative;
+    overflow: hidden;
+	margin: auto;transform-origin: 0 0;
+}
+#drawit img {
+    max-width: 100%;
+	position:absolute;
+}
+
