@@ -401,6 +401,10 @@
                                                         <!-- ngRepeat: personalization in model.variant.personalizations.BACK -->
                                                     </div>
                                                 </div>
+												<div class="side-image-box margin-top-sm custom-theme-accent-sidebar svg-view-parent">
+													<img width="50" height="50" class="ng-scope" src="https://gearlaunch-prod-imgix-secure.imgix.net/img/product/PulloverHoodie_FRONT_722edad976.png?fit=clamp&bg=262626&mark64=LzQ5ZTczMTlhLTMwOGEtNDc3OC1iZGY2LTNkM2Y5ZTkwZmY3NA&markw=272&markx=217&marky=148&fm=jpg&q=75&ixlib=java-1.1.0&s=20269212ce7023861883cb90c1d9f54d">
+													<!-- ngRepeat: personalization in model.variant.personalizations.BACK -->
+												</div>
                                                 <!-- end ngIf: model.variant.isDoubleSided && model.variant.subCategory !== 'SOCKS' -->
                                                 <!-- ngIf: getMocksListSize(model.color) > 0 -->
                                             </div><!-- end ngIf: !isSmallWindow() -->
@@ -448,260 +452,34 @@
                         </div>
                         <div class="product-selection-container">
                             <div class="container-fluid">
-                                <div class="related-products row">
+                                <div class="related-products row hidden-lg hidden-md">
                                     <div class="col-md-12">
-                                        <div class="available-styles"
-                                             ng-show="variants.length > 1 &amp;&amp; !cartItemEdit">
-                                            <h4 class="product-label">Product Type</h4>
-                                            <!-- ngIf: showScrollArrow() -->
-                                            <div ng-if="showScrollArrow()"
-                                                 class="scroll-arrows custom-theme-accent-arrows ng-scope"
-                                                 id="carousel-scroller">
-                                                <a ng-click="scrollLeft()"
-                                                   ng-class="{'disable-anchor' : !isScrollLeft}"
-                                                   class="disable-anchor"><i
-                                                        class="fa fa-arrow-left custom-theme-accent-arrows"
-                                                        aria-hidden="true"></i></a>
-                                                <a ng-click="scrollRight()"
-                                                   ng-class="{'disable-anchor' : !isScrollRight}"><i
-                                                        class="fa fa-arrow-right custom-theme-accent-arrows"
-                                                        aria-hidden="true"></i></a>
-                                            </div><!-- end ngIf: showScrollArrow() -->
-                                            <div>
-                                                <div class="productSelect tab-content tab-designer thumbnails-container uncategorized">
-                                                    <div class="carousel-container">
-                                                        <div ng-show="variants.length > 1" class="">
-                                                            <ul class="carousel">
-                                                                <!-- ngRepeat: v in splitVariants -->
-                                                                <li ng-repeat="v in splitVariants"
-                                                                    class="ng-scope">
-                                                                    <!-- ngRepeat: variant in v -->
-                                                                    <div ng-repeat="variant in v"
-                                                                         class="carousel-thumbnail-container custom-theme-accent-active-thumbnail svg-view-parent ng-scope">
-                                                                        <!-- ngIf: buyerCountryRegion === 'EU' && isFulfillableToEU(variant) -->
-                                                                        <!-- ngIf: !shouldRenderSVGMockup(selectImageToShow(variant)) --><img
-                                                                            ng-if="!shouldRenderSVGMockup(selectImageToShow(variant))"
-                                                                            ng-src="https://gearlaunch-prod-imgix-secure.imgix.net/img/product/PulloverHoodie_BACK_2a0ffeb278.png?fit=clamp&amp;bg=FFFFFF&amp;fm=jpg&amp;q=75&amp;ixlib=java-1.1.0&amp;s=a146587654dcf6b2c493e66dc669ed8c"
-                                                                            gl-load="variantLoaded(variant)"
-                                                                            ng-class="{selected: model.variant === variant}"
-                                                                            class="img-responsive img-responsive-fix prod-img carousel-thumbnail custom-theme-accent-active-thumbnail ng-scope selected"
-                                                                            ng-click="updateVariant(variant)"
-                                                                            src="https://gearlaunch-prod-imgix-secure.imgix.net/img/product/PulloverHoodie_BACK_2a0ffeb278.png?fit=clamp&amp;bg=FFFFFF&amp;fm=jpg&amp;q=75&amp;ixlib=java-1.1.0&amp;s=a146587654dcf6b2c493e66dc669ed8c">
-                                                                        <!-- end ngIf: !shouldRenderSVGMockup(selectImageToShow(variant)) -->
-                                                                        <!-- ngIf: shouldRenderSVGMockup(selectImageToShow(variant)) -->
-                                                                        <!-- ngRepeat: personalization in variant.personalizations[getVariantPositionToShow(variant)] -->
-                                                                        <div class="loading-spinner ng-hide"
-                                                                             ng-hide="variantsLoaded.indexOf(variant) != -1"
-                                                                             style="">
-                                                                            <div class="loader custom-theme-loader"></div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <!-- end ngRepeat: variant in v -->
-                                                                    <div ng-repeat="variant in v"
-                                                                         class="carousel-thumbnail-container custom-theme-accent-active-thumbnail svg-view-parent ng-scope">
-                                                                        <!-- ngIf: buyerCountryRegion === 'EU' && isFulfillableToEU(variant) -->
-                                                                        <!-- ngIf: !shouldRenderSVGMockup(selectImageToShow(variant)) --><img
-                                                                            ng-if="!shouldRenderSVGMockup(selectImageToShow(variant))"
-                                                                            ng-src="https://gearlaunch-prod-imgix-secure.imgix.net/img/product/ElevenOunceMugWhite_BACK-v1_60d2e8929a.png?fit=clamp&amp;bg=FFFFFF&amp;fm=jpg&amp;q=75&amp;ixlib=java-1.1.0&amp;s=98fe8d2c45864842f289d88a63cc37fa"
-                                                                            gl-load="variantLoaded(variant)"
-                                                                            ng-class="{selected: model.variant === variant}"
-                                                                            class="img-responsive img-responsive-fix prod-img carousel-thumbnail custom-theme-accent-active-thumbnail ng-scope"
-                                                                            ng-click="updateVariant(variant)"
-                                                                            src="https://gearlaunch-prod-imgix-secure.imgix.net/img/product/ElevenOunceMugWhite_BACK-v1_60d2e8929a.png?fit=clamp&amp;bg=FFFFFF&amp;fm=jpg&amp;q=75&amp;ixlib=java-1.1.0&amp;s=98fe8d2c45864842f289d88a63cc37fa">
-                                                                        <!-- end ngIf: !shouldRenderSVGMockup(selectImageToShow(variant)) -->
-                                                                        <!-- ngIf: shouldRenderSVGMockup(selectImageToShow(variant)) -->
-                                                                        <!-- ngRepeat: personalization in variant.personalizations[getVariantPositionToShow(variant)] -->
-                                                                        <div class="loading-spinner ng-hide"
-                                                                             ng-hide="variantsLoaded.indexOf(variant) != -1"
-                                                                             style="">
-                                                                            <div class="loader custom-theme-loader"></div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <!-- end ngRepeat: variant in v -->
-                                                                    <div ng-repeat="variant in v"
-                                                                         class="carousel-thumbnail-container custom-theme-accent-active-thumbnail svg-view-parent ng-scope">
-                                                                        <!-- ngIf: buyerCountryRegion === 'EU' && isFulfillableToEU(variant) -->
-                                                                        <!-- ngIf: !shouldRenderSVGMockup(selectImageToShow(variant)) --><img
-                                                                            ng-if="!shouldRenderSVGMockup(selectImageToShow(variant))"
-                                                                            ng-src="https://gearlaunch-prod-imgix-secure.imgix.net/img/product/Bella3200BaseballTee_BACK_186_30_312_443_8ca25d94bb.png?fit=clamp&amp;bg=262626&amp;fm=jpg&amp;q=75&amp;ixlib=java-1.1.0&amp;s=8063dd7bc4f8ca1f5f0c0205d6df623f"
-                                                                            gl-load="variantLoaded(variant)"
-                                                                            ng-class="{selected: model.variant === variant}"
-                                                                            class="img-responsive img-responsive-fix prod-img carousel-thumbnail custom-theme-accent-active-thumbnail ng-scope"
-                                                                            ng-click="updateVariant(variant)"
-                                                                            src="https://gearlaunch-prod-imgix-secure.imgix.net/img/product/Bella3200BaseballTee_BACK_186_30_312_443_8ca25d94bb.png?fit=clamp&amp;bg=262626&amp;fm=jpg&amp;q=75&amp;ixlib=java-1.1.0&amp;s=8063dd7bc4f8ca1f5f0c0205d6df623f">
-                                                                        <!-- end ngIf: !shouldRenderSVGMockup(selectImageToShow(variant)) -->
-                                                                        <!-- ngIf: shouldRenderSVGMockup(selectImageToShow(variant)) -->
-                                                                        <!-- ngRepeat: personalization in variant.personalizations[getVariantPositionToShow(variant)] -->
-                                                                        <div class="loading-spinner ng-hide"
-                                                                             ng-hide="variantsLoaded.indexOf(variant) != -1"
-                                                                             style="">
-                                                                            <div class="loader custom-theme-loader"></div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <!-- end ngRepeat: variant in v -->
-                                                                </li>
-                                                                <!-- end ngRepeat: v in splitVariants -->
-                                                                <li ng-repeat="v in splitVariants"
-                                                                    class="ng-scope">
-                                                                    <!-- ngRepeat: variant in v -->
-                                                                    <div ng-repeat="variant in v"
-                                                                         class="carousel-thumbnail-container custom-theme-accent-active-thumbnail svg-view-parent ng-scope">
-                                                                        <!-- ngIf: buyerCountryRegion === 'EU' && isFulfillableToEU(variant) -->
-                                                                        <!-- ngIf: !shouldRenderSVGMockup(selectImageToShow(variant)) --><img
-                                                                            ng-if="!shouldRenderSVGMockup(selectImageToShow(variant))"
-                                                                            ng-src="https://gearlaunch-prod-imgix-secure.imgix.net/img/product/PulloverHoodie_BACK_2a0ffeb278.png?fit=clamp&amp;bg=FFFFFF&amp;fm=jpg&amp;q=75&amp;ixlib=java-1.1.0&amp;s=a146587654dcf6b2c493e66dc669ed8c"
-                                                                            gl-load="variantLoaded(variant)"
-                                                                            ng-class="{selected: model.variant === variant}"
-                                                                            class="img-responsive img-responsive-fix prod-img carousel-thumbnail custom-theme-accent-active-thumbnail ng-scope"
-                                                                            ng-click="updateVariant(variant)"
-                                                                            src="https://gearlaunch-prod-imgix-secure.imgix.net/img/product/PulloverHoodie_BACK_2a0ffeb278.png?fit=clamp&amp;bg=FFFFFF&amp;fm=jpg&amp;q=75&amp;ixlib=java-1.1.0&amp;s=a146587654dcf6b2c493e66dc669ed8c">
-                                                                        <!-- end ngIf: !shouldRenderSVGMockup(selectImageToShow(variant)) -->
-                                                                        <!-- ngIf: shouldRenderSVGMockup(selectImageToShow(variant)) -->
-                                                                        <!-- ngRepeat: personalization in variant.personalizations[getVariantPositionToShow(variant)] -->
-                                                                        <div class="loading-spinner ng-hide"
-                                                                             ng-hide="variantsLoaded.indexOf(variant) != -1"
-                                                                             style="">
-                                                                            <div class="loader custom-theme-loader"></div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <!-- end ngRepeat: variant in v -->
-                                                                    <div ng-repeat="variant in v"
-                                                                         class="carousel-thumbnail-container custom-theme-accent-active-thumbnail svg-view-parent ng-scope">
-                                                                        <!-- ngIf: buyerCountryRegion === 'EU' && isFulfillableToEU(variant) -->
-                                                                        <!-- ngIf: !shouldRenderSVGMockup(selectImageToShow(variant)) --><img
-                                                                            ng-if="!shouldRenderSVGMockup(selectImageToShow(variant))"
-                                                                            ng-src="https://gearlaunch-prod-imgix-secure.imgix.net/img/product/ZipHoodie-v1-Back_0612fa3c62.png?fit=clamp&amp;bg=FFFFFF&amp;fm=jpg&amp;q=75&amp;ixlib=java-1.1.0&amp;s=9833c8c8bb39011f12b5f03d09aa2077"
-                                                                            gl-load="variantLoaded(variant)"
-                                                                            ng-class="{selected: model.variant === variant}"
-                                                                            class="img-responsive img-responsive-fix prod-img carousel-thumbnail custom-theme-accent-active-thumbnail ng-scope"
-                                                                            ng-click="updateVariant(variant)"
-                                                                            src="https://gearlaunch-prod-imgix-secure.imgix.net/img/product/ZipHoodie-v1-Back_0612fa3c62.png?fit=clamp&amp;bg=FFFFFF&amp;fm=jpg&amp;q=75&amp;ixlib=java-1.1.0&amp;s=9833c8c8bb39011f12b5f03d09aa2077">
-                                                                        <!-- end ngIf: !shouldRenderSVGMockup(selectImageToShow(variant)) -->
-                                                                        <!-- ngIf: shouldRenderSVGMockup(selectImageToShow(variant)) -->
-                                                                        <!-- ngRepeat: personalization in variant.personalizations[getVariantPositionToShow(variant)] -->
-                                                                        <div class="loading-spinner ng-hide"
-                                                                             ng-hide="variantsLoaded.indexOf(variant) != -1"
-                                                                             style="">
-                                                                            <div class="loader custom-theme-loader"></div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <!-- end ngRepeat: variant in v -->
-                                                                    <div ng-repeat="variant in v"
-                                                                         class="carousel-thumbnail-container custom-theme-accent-active-thumbnail svg-view-parent ng-scope">
-                                                                        <!-- ngIf: buyerCountryRegion === 'EU' && isFulfillableToEU(variant) -->
-                                                                        <!-- ngIf: !shouldRenderSVGMockup(selectImageToShow(variant)) --><img
-                                                                            ng-if="!shouldRenderSVGMockup(selectImageToShow(variant))"
-                                                                            ng-src="https://gearlaunch-prod-imgix-secure.imgix.net/img/product/KidsHoodie_BACK_6f248e8fe3.png?fit=clamp&amp;bg=FFFFFF&amp;fm=jpg&amp;q=75&amp;ixlib=java-1.1.0&amp;s=91bf1a43bc3b0a566018e1b5e682041a"
-                                                                            gl-load="variantLoaded(variant)"
-                                                                            ng-class="{selected: model.variant === variant}"
-                                                                            class="img-responsive img-responsive-fix prod-img carousel-thumbnail custom-theme-accent-active-thumbnail ng-scope"
-                                                                            ng-click="updateVariant(variant)"
-                                                                            src="https://gearlaunch-prod-imgix-secure.imgix.net/img/product/KidsHoodie_BACK_6f248e8fe3.png?fit=clamp&amp;bg=FFFFFF&amp;fm=jpg&amp;q=75&amp;ixlib=java-1.1.0&amp;s=91bf1a43bc3b0a566018e1b5e682041a">
-                                                                        <!-- end ngIf: !shouldRenderSVGMockup(selectImageToShow(variant)) -->
-                                                                        <!-- ngIf: shouldRenderSVGMockup(selectImageToShow(variant)) -->
-                                                                        <!-- ngRepeat: personalization in variant.personalizations[getVariantPositionToShow(variant)] -->
-                                                                        <div class="loading-spinner ng-hide"
-                                                                             ng-hide="variantsLoaded.indexOf(variant) != -1"
-                                                                             style="">
-                                                                            <div class="loader custom-theme-loader"></div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <!-- end ngRepeat: variant in v -->
-                                                                </li>
-                                                                <!-- end ngRepeat: v in splitVariants -->
-                                                                <li ng-repeat="v in splitVariants"
-                                                                    class="ng-scope">
-                                                                    <!-- ngRepeat: variant in v -->
-                                                                    <div ng-repeat="variant in v"
-                                                                         class="carousel-thumbnail-container custom-theme-accent-active-thumbnail svg-view-parent ng-scope">
-                                                                        <!-- ngIf: buyerCountryRegion === 'EU' && isFulfillableToEU(variant) -->
-                                                                        <!-- ngIf: !shouldRenderSVGMockup(selectImageToShow(variant)) --><img
-                                                                            ng-if="!shouldRenderSVGMockup(selectImageToShow(variant))"
-                                                                            ng-src="https://gearlaunch-prod-imgix-secure.imgix.net/img/product/UnisexCrew_BACK_40e61d69b0.png?fit=clamp&amp;bg=FFFFFF&amp;fm=jpg&amp;q=75&amp;ixlib=java-1.1.0&amp;s=628f5b212e802d1608fa237c03805137"
-                                                                            gl-load="variantLoaded(variant)"
-                                                                            ng-class="{selected: model.variant === variant}"
-                                                                            class="img-responsive img-responsive-fix prod-img carousel-thumbnail custom-theme-accent-active-thumbnail ng-scope"
-                                                                            ng-click="updateVariant(variant)"
-                                                                            src="https://gearlaunch-prod-imgix-secure.imgix.net/img/product/UnisexCrew_BACK_40e61d69b0.png?fit=clamp&amp;bg=FFFFFF&amp;fm=jpg&amp;q=75&amp;ixlib=java-1.1.0&amp;s=628f5b212e802d1608fa237c03805137">
-                                                                        <!-- end ngIf: !shouldRenderSVGMockup(selectImageToShow(variant)) -->
-                                                                        <!-- ngIf: shouldRenderSVGMockup(selectImageToShow(variant)) -->
-                                                                        <!-- ngRepeat: personalization in variant.personalizations[getVariantPositionToShow(variant)] -->
-                                                                        <div class="loading-spinner ng-hide"
-                                                                             ng-hide="variantsLoaded.indexOf(variant) != -1"
-                                                                             style="">
-                                                                            <div class="loader custom-theme-loader"></div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <!-- end ngRepeat: variant in v -->
-                                                                    <div ng-repeat="variant in v"
-                                                                         class="carousel-thumbnail-container custom-theme-accent-active-thumbnail svg-view-parent ng-scope">
-                                                                        <!-- ngIf: buyerCountryRegion === 'EU' && isFulfillableToEU(variant) -->
-                                                                        <!-- ngIf: !shouldRenderSVGMockup(selectImageToShow(variant)) --><img
-                                                                            ng-if="!shouldRenderSVGMockup(selectImageToShow(variant))"
-                                                                            ng-src="https://gearlaunch-prod-imgix-secure.imgix.net/img/product/UnisexLongSleeve_BACK_472dfa19c1.png?fit=clamp&amp;bg=FFFFFF&amp;fm=jpg&amp;q=75&amp;ixlib=java-1.1.0&amp;s=395efc510f53eb4c857bacede9964969"
-                                                                            gl-load="variantLoaded(variant)"
-                                                                            ng-class="{selected: model.variant === variant}"
-                                                                            class="img-responsive img-responsive-fix prod-img carousel-thumbnail custom-theme-accent-active-thumbnail ng-scope"
-                                                                            ng-click="updateVariant(variant)"
-                                                                            src="https://gearlaunch-prod-imgix-secure.imgix.net/img/product/UnisexLongSleeve_BACK_472dfa19c1.png?fit=clamp&amp;bg=FFFFFF&amp;fm=jpg&amp;q=75&amp;ixlib=java-1.1.0&amp;s=395efc510f53eb4c857bacede9964969">
-                                                                        <!-- end ngIf: !shouldRenderSVGMockup(selectImageToShow(variant)) -->
-                                                                        <!-- ngIf: shouldRenderSVGMockup(selectImageToShow(variant)) -->
-                                                                        <!-- ngRepeat: personalization in variant.personalizations[getVariantPositionToShow(variant)] -->
-                                                                        <div class="loading-spinner ng-hide"
-                                                                             ng-hide="variantsLoaded.indexOf(variant) != -1"
-                                                                             style="">
-                                                                            <div class="loader custom-theme-loader"></div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <!-- end ngRepeat: variant in v -->
-                                                                    <div ng-repeat="variant in v"
-                                                                         class="carousel-thumbnail-container custom-theme-accent-active-thumbnail svg-view-parent ng-scope">
-                                                                        <!-- ngIf: buyerCountryRegion === 'EU' && isFulfillableToEU(variant) -->
-                                                                        <!-- ngIf: !shouldRenderSVGMockup(selectImageToShow(variant)) --><img
-                                                                            ng-if="!shouldRenderSVGMockup(selectImageToShow(variant))"
-                                                                            ng-src="https://gearlaunch-prod-imgix-secure.imgix.net/img/product/YouthShirt_BACK_ee9b9f7b2e.png?fit=clamp&amp;bg=FFFFFF&amp;fm=jpg&amp;q=75&amp;ixlib=java-1.1.0&amp;s=e91d300b6af93b683f33ea0f3cff001c"
-                                                                            gl-load="variantLoaded(variant)"
-                                                                            ng-class="{selected: model.variant === variant}"
-                                                                            class="img-responsive img-responsive-fix prod-img carousel-thumbnail custom-theme-accent-active-thumbnail ng-scope"
-                                                                            ng-click="updateVariant(variant)"
-                                                                            src="https://gearlaunch-prod-imgix-secure.imgix.net/img/product/YouthShirt_BACK_ee9b9f7b2e.png?fit=clamp&amp;bg=FFFFFF&amp;fm=jpg&amp;q=75&amp;ixlib=java-1.1.0&amp;s=e91d300b6af93b683f33ea0f3cff001c">
-                                                                        <!-- end ngIf: !shouldRenderSVGMockup(selectImageToShow(variant)) -->
-                                                                        <!-- ngIf: shouldRenderSVGMockup(selectImageToShow(variant)) -->
-                                                                        <!-- ngRepeat: personalization in variant.personalizations[getVariantPositionToShow(variant)] -->
-                                                                        <div class="loading-spinner ng-hide"
-                                                                             ng-hide="variantsLoaded.indexOf(variant) != -1"
-                                                                             style="">
-                                                                            <div class="loader custom-theme-loader"></div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <!-- end ngRepeat: variant in v -->
-                                                                </li>
-                                                                <!-- end ngRepeat: v in splitVariants -->
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                    <div class="carousel-mask"></div>
-                                                </div>
-                                                <div class="product-price">
-                                                    <div class="ng-binding">Unisex Heavyweight
-                                                        Pullover Hoodie
-                                                    </div>
-                                                    <strike-through-price
-                                                            is-tagged="containsStrikeThroughTag()"
-                                                            display-price="model.variant.displayPrice"
-                                                            updated-price="getUpdatePrice(model.variant.displayPrice)"
-                                                            class="ng-isolate-scope">
-                                                        <div>
-                                                            <!-- ngIf: $ctrl.isTagged -->
-                                                            <span ng-class="[{'price-update price-green': $ctrl.isTagged}]"
-                                                                  class="ng-binding">
-				$36.24 USD
-			</span>
-                                                        </div>
-                                                    </strike-through-price>
-                                                    <!-- ngIf: geolocation == 'EU' -->
-                                                </div>
-                                            </div>
+                                        <div class="available-styles">
+											<div class="productSelect tab-content tab-designer thumbnails-container uncategorized">
+												<div class="carousel-container">
+													<ul class="carousel">
+														<li ng-repeat="v in splitVariants"
+															class="ng-scope">
+															<div ng-repeat="variant in v"
+																 class="carousel-thumbnail-container custom-theme-accent-active-thumbnail svg-view-parent ng-scope">
+																<img class="img-responsive img-responsive-fix prod-img carousel-thumbnail custom-theme-accent-active-thumbnail ng-scope" src="https://gearlaunch-prod-imgix-secure.imgix.net/img/product/UnisexCrew_FRONT_46be88da32.png?fit=clamp&amp;bg=262626&amp;mark64=LzQ5ZTczMTlhLTMwOGEtNDc3OC1iZGY2LTNkM2Y5ZTkwZmY3NA&amp;markw=205&amp;markx=143&amp;marky=67&amp;w=480&amp;fm=jpg&amp;q=75&amp;ixlib=java-1.1.0&amp;s=0d4a7db1808f74cb235e5ed8e440e132">
+															</div>
+															<div ng-repeat="variant in v"
+																 class="carousel-thumbnail-container custom-theme-accent-active-thumbnail svg-view-parent ng-scope">
+																<img class="img-responsive img-responsive-fix prod-img carousel-thumbnail custom-theme-accent-active-thumbnail ng-scope" src="https://gearlaunch-prod-imgix-secure.imgix.net/img/product/ElevenOunceMugWhite_FRONT-v1_b51a18c584.png?fit=clamp&bg=000000&mark64=LzQ5ZTczMTlhLTMwOGEtNDc3OC1iZGY2LTNkM2Y5ZTkwZmY3NA&markw=234&markx=168&marky=104&w=480&fm=jpg&q=75&ixlib=java-1.1.0&s=aeff0508330fdaa23e7d17458996f7b0">
+															</div>
+															<div ng-repeat="variant in v"
+																 class="carousel-thumbnail-container custom-theme-accent-active-thumbnail svg-view-parent ng-scope">
+																<img class="img-responsive img-responsive-fix prod-img carousel-thumbnail custom-theme-accent-active-thumbnail ng-scope" src="https://gearlaunch-prod-imgix-secure.imgix.net/img/product/PulloverHoodie_FRONT_722edad976.png?fit=clamp&bg=262626&mark64=LzQ5ZTczMTlhLTMwOGEtNDc3OC1iZGY2LTNkM2Y5ZTkwZmY3NA&markw=272&markx=217&marky=148&fm=jpg&q=75&ixlib=java-1.1.0&s=20269212ce7023861883cb90c1d9f54d">
+															</div>
+															<div ng-repeat="variant in v"
+																 class="carousel-thumbnail-container custom-theme-accent-active-thumbnail svg-view-parent ng-scope">
+																<img class="img-responsive img-responsive-fix prod-img carousel-thumbnail custom-theme-accent-active-thumbnail ng-scope" src="https://gearlaunch-prod-imgix-secure.imgix.net/img/product/PulloverHoodie_FRONT_722edad976.png?fit=clamp&bg=262626&mark64=LzQ5ZTczMTlhLTMwOGEtNDc3OC1iZGY2LTNkM2Y5ZTkwZmY3NA&markw=272&markx=217&marky=148&fm=jpg&q=75&ixlib=java-1.1.0&s=20269212ce7023861883cb90c1d9f54d">
+															</div>
+														</li>
+														</ul>
+												</div>
+											</div>
                                         </div>
                                         <div class="single-style ng-hide"
                                              ng-show="variants.length === 1 || cartItemEdit">
@@ -727,20 +505,6 @@
                                                     <!-- ngIf: geolocation == 'EU' -->
                                                 </div>
                                             </div>
-                                            <!-- ngIf: showScrollArrow() -->
-                                            <div ng-if="showScrollArrow()"
-                                                 class="scroll-arrows custom-theme-accent-arrows ng-scope"
-                                                 id="tabs-scroller">
-                                                <a ng-click="scrollLeft()"
-                                                   ng-class="{'disable-anchor' : !isScrollLeft}"
-                                                   class="disable-anchor"><i
-                                                        class="fa fa-arrow-left custom-theme-accent-arrows"
-                                                        aria-hidden="true"></i></a>
-                                                <a ng-click="scrollRight()"
-                                                   ng-class="{'disable-anchor' : !isScrollRight}"><i
-                                                        class="fa fa-arrow-right custom-theme-accent-arrows"
-                                                        aria-hidden="true"></i></a>
-                                            </div><!-- end ngIf: showScrollArrow() -->
                                         </div>
                                     </div>
                                 </div>
@@ -762,6 +526,7 @@
                                          ng-if="model.color.sizes.length > 0 &amp;&amp;
 													!model.variant.productCategory.groupBySubCategory">
                                         <div class="col-md-12">
+											<div class="option_title">Personalized options</div>
 											<h4 class="product-label">Face's Woman</h4>
 											<div class="swatch-container">
 											   <div class="mswatch"><input id="face0" type="radio" name="0" value="1"> <label for="face0" tabindex="0" ><img src="https://cdn.customily.com/shopify/assetFiles/swatches/interestpod.myshopify.com/f9eb7ef4-510d-44fd-858e-b64ad5467623/159/7e1487cf-0852-4c64-b3b5-6434a3ba607d.png"></label></div>
@@ -902,7 +667,6 @@
         </div>
     </footer>
 </div>
-<script type="text/javascript" async="" src="assets/result.js"></script>
 <script type="text/javascript">
 	document.getElementById("face0").click();
 	document.querySelectorAll(".swatch-container").forEach(function(swatchContainer) {
