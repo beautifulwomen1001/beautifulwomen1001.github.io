@@ -379,11 +379,11 @@
                                         <div id="productImageHolder">
 											<div id="drawit">
 												<img src="bg.jpg"/>
-												<img id="img2" src="2/0.png" style="left: 298px;top: 253px;"/>
-												<img id="img3" src="3/0.png" style="left: 295px;top: 319px;"/>
-												<img id="img4-5" src="4/5/b.png" style="left: 298px;top: 223px;"/>
-												<img id="img0" src="0/1.png" style="left: 344px;top: 294px;"/>
-												<img id="img1" src="1/0.png" style="left: 330px;top: 288px;"/>
+												<img id="img2" src="women/2/0.png" style="left: 298px;top: 253px;"/>
+												<img id="img3" src="women/3/0.png" style="left: 295px;top: 319px;"/>
+												<img id="img4-5" src="women/4/5/b.png" style="left: 298px;top: 223px;"/>
+												<img id="img0" src="women/0/1.png" style="left: 344px;top: 294px;"/>
+												<img id="img1" src="women/1/0.png" style="left: 330px;top: 288px;"/>
 											</div>
                                         </div><!-- end ngIf: !productMock.isSelected -->
                                         <!-- ngIf: productMock.isSelected -->
@@ -463,15 +463,20 @@
 													!model.variant.productCategory.groupBySubCategory">
                                         <div class="col-md-12">
 											<div class="option_title">Personalized options</div>
+											<h4 class="product-label">Choose Character</h4>
+											<div class="swatch-container">
+											   <div class="mswatch"><input style="display:none"/><a href="#"><label class="choosen"><img src="assets/women.png"/></label></a></div>
+											   <div class="mswatch"><a href="men.html"><label><img src="assets/men.png"/></label></a></div>
+											</div>
 											<h4 class="product-label">Face's Woman</h4>
 											<div class="swatch-container">
-											   <div class="mswatch"><input id="face0" type="radio" name="0" value="1"> <label for="face0" tabindex="0" ><img src="https://cdn.customily.com/shopify/assetFiles/swatches/interestpod.myshopify.com/f9eb7ef4-510d-44fd-858e-b64ad5467623/159/7e1487cf-0852-4c64-b3b5-6434a3ba607d.png"></label></div>
-											   <div class="mswatch"><input id="face1" type="radio" name="0" value="0"> <label for="face1"  tabindex="0"><img src="https://cdn.customily.com/shopify/assetFiles/swatches/interestpod.myshopify.com/f9eb7ef4-510d-44fd-858e-b64ad5467623/159/62dc946e-c1c6-4e30-93c6-8af261b5b8a6.png"></label></div>
+											   <div class="mswatch"><input id="face0" type="radio" name="0" value="1"> <label for="face0" tabindex="0" ><img src="assets/young.png"></label></div>
+											   <div class="mswatch"><input id="face1" type="radio" name="0" value="0"> <label for="face1"  tabindex="0"><img src="assets/old.png"></label></div>
 											</div>
 											
 											<h4 class="product-label">Choose Glasses</h4>
-											<div class="swatch-container"><div class="mswatch"><input id="gl-0" type="radio" name="1" value="0"> <label for="gl-0" tabindex="0" ><img src="https://cdn.customily.com/shopify/assetFiles/swatches/interestpod.myshopify.com/f9eb7ef4-510d-44fd-858e-b64ad5467623/171/28ea6664-7748-4bad-904c-c1d19651a0e8.png" ></label></div>
-											<div class="mswatch"><input id="gl-1" type="radio" name="1" value="1"> <label for="gl-1" tabindex="0" ><img src="https://cdn.customily.com/shopify/assetFiles/swatches/interestpod.myshopify.com/f9eb7ef4-510d-44fd-858e-b64ad5467623/171/be19fb95-ff9f-42b2-ba29-5310e4e94915.png" ></label></div></div>
+											<div class="swatch-container"><div class="mswatch"><input id="gl-0" type="radio" name="1" value="0"> <label for="gl-0" tabindex="0" ><img src="assets/glasses.png" ></label></div>
+											<div class="mswatch"><input id="gl-1" type="radio" name="1" value="1"> <label for="gl-1" tabindex="0" ><img src="assets/no.png" ></label></div></div>
 											
                                             <h4 class="product-label">Choose Woman Skin Tone</h4>
 											<div class="swatch-container"><div class="mswatch"><input id="sk1" type="radio" name="2" value="0"> <label for="sk1" style="background-color: rgb(253, 221, 196);" tabindex="0"><!----></label></div><div class="mswatch"><input id="sk2" type="radio" name="2" value="1"> <label for="sk2" style="background-color: rgb(240, 179, 135);" tabindex="0"><!----></label></div><div class="mswatch"><input id="sk4" type="radio" name="2" value="2"> <label for="sk4" style="background-color: rgb(168, 108, 75);" tabindex="0"><!----></label></div><div class="mswatch"><input id="sk3" type="radio" name="2" value="3"> <label for="sk3" style="background-color: rgb(117, 51, 27);" tabindex="0"><!----></label></div></div>
@@ -488,24 +493,23 @@
 											
 											<h4>Woman Hairstyle</h4>
 											<div class="swatch-container hair">
-												<div class="mswatch"><input id="cl-b" type="radio" name="5" value="b"> <label for="cl-b" tabindex="0"><img src="4/5/b.png" style=" width: 46px;margin-top: -10px;margin-left: 3px;
-"></label></div>
-												<div class="mswatch"><input id="cl-0" type="radio" name="5" value="0"> <label for="cl-0" tabindex="0"><img src="4/5/0.png" style="width: 65px;margin-top: -10px;margin-left: -3px;"></label></div>
-												<div class="mswatch"><input id="cl-1" type="radio" name="5" value="1"> <label for="cl-1" tabindex="0"><img src="4/5/1.png" style="margin-top: -7px;margin-left: 2px;"></label></div>
-												<div class="mswatch"><input id="cl-2" type="radio" name="5" value="2"> <label for="cl-2" tabindex="0"><img src="4/5/2.png" style="width: 67px;margin-top: 3px;margin-left: -4px;"></label></div>
-												<div class="mswatch"><input id="cl-3" type="radio" name="5" value="3"> <label for="cl-3" tabindex="0"><img src="4/5/3.png" style="margin-top:-4px;width:47px;margin-left:4px"></label></div>
-												<div class="mswatch"><input id="cl-4" type="radio" name="5" value="4"> <label for="cl-4" tabindex="0"><img src="4/5/4.png" style="width:77px;margin-top:-13px;margin-left:-10px"></label></div>
-												<div class="mswatch"><input id="cl-5" type="radio" name="5" value="5"> <label for="cl-5" tabindex="0"><img src="4/5/5.png" style="width:87px;margin-top:-10px;margin-left:-13px"></label></div>
-												<div class="mswatch"><input id="cl-6" type="radio" name="5" value="6"> <label for="cl-6" tabindex="0"><img src="4/5/6.png" style="width:87px;margin-top:-10px;margin-left:-13px"></label></div>
-												<div class="mswatch"><input id="cl-7" type="radio" name="5" value="7"> <label for="cl-7" tabindex="0"><img src="4/5/7.png" style="width:87px;margin-top:-10px;margin-left:-13px"></label></div>
-												<div class="mswatch"><input id="cl-8" type="radio" name="5" value="8"> <label for="cl-8" tabindex="0"><img src="4/5/8.png" style="width:87px;margin-top:-10px;margin-left:-13px"></label></div>
-												<div class="mswatch"><input id="cl-9" type="radio" name="5" value="9"> <label for="cl-9" tabindex="0"><img src="4/5/9.png" style="width: 50px;margin-top: -8px;margin-left: 4px;"></label></div>
-												<div class="mswatch"><input id="cl-a" type="radio" name="5" value="a"> <label for="cl-a" tabindex="0"><img src="4/5/a.png" style="width: 50px;margin-top: -7px;margin-left: 4px;"></label></div>
-												<div class="mswatch"><input id="cl-c" type="radio" name="5" value="c"> <label for="cl-c" tabindex="0"><img src="https://cdn.customily.com/shopify/assetFiles/swatches/interestpod.myshopify.com/f9eb7ef4-510d-44fd-858e-b64ad5467623/171/be19fb95-ff9f-42b2-ba29-5310e4e94915.png"></label></div>
+												<div class="mswatch"><input id="cl-b" type="radio" name="5" value="b"> <label for="cl-b" tabindex="0"><img src="women/4/5/b.png" style=" width: 46px;margin-top: -10px;margin-left: 3px;"></label></div>
+												<div class="mswatch"><input id="cl-0" type="radio" name="5" value="0"> <label for="cl-0" tabindex="0"><img src="women/4/5/0.png" style="width: 61px;margin-top: -17px;margin-left: -9px;"></label></div>
+												<div class="mswatch"><input id="cl-1" type="radio" name="5" value="1"> <label for="cl-1" tabindex="0"><img src="women/4/5/1.png" style="margin-top: -7px;margin-left: -1px;"></label></div>
+												<div class="mswatch"><input id="cl-2" type="radio" name="5" value="2"> <label for="cl-2" tabindex="0"><img src="women/4/5/2.png" style="width: 57px;margin-top: 0px;margin-left: -8px;"></label></div>
+												<div class="mswatch"><input id="cl-3" type="radio" name="5" value="3"> <label for="cl-3" tabindex="0"><img src="women/4/5/3.png" style="margin-top: -5px;width: 50px;margin-left: 3px;"></label></div>
+												<div class="mswatch"><input id="cl-4" type="radio" name="5" value="4"> <label for="cl-4" tabindex="0"><img src="women/4/5/4.png" style="width: 64px;margin-top: -17px;margin-left: -12px;"></label></div>
+												<div class="mswatch"><input id="cl-5" type="radio" name="5" value="5"> <label for="cl-5" tabindex="0"><img src="women/4/5/5.png" style="width: 69px;margin-top: -14px;margin-left: -15px;"></label></div>
+												<div class="mswatch"><input id="cl-6" type="radio" name="5" value="6"> <label for="cl-6" tabindex="0"><img src="women/4/5/6.png" style="width: 71px;margin-top: -10px;margin-left: -18px;"></label></div>
+												<div class="mswatch"><input id="cl-7" type="radio" name="5" value="7"> <label for="cl-7" tabindex="0"><img src="women/4/5/7.png" style="width: 77px;margin-top: -16px;margin-left: -24px;"></label></div>
+												<div class="mswatch"><input id="cl-8" type="radio" name="5" value="8"> <label for="cl-8" tabindex="0"><img src="women/4/5/8.png" style="width: 67px;margin-top: -8px;margin-left: -15px;"></label></div>
+												<div class="mswatch"><input id="cl-9" type="radio" name="5" value="9"> <label for="cl-9" tabindex="0"><img src="women/4/5/9.png" style="width: 43px;margin-top: -11px;margin-left: 4px;"></label></div>
+												<div class="mswatch"><input id="cl-a" type="radio" name="5" value="a"> <label for="cl-a" tabindex="0"><img src="women/4/5/a.png" style="width: 47px;margin-top: -9px;margin-left: 3px;"></label></div>
+												<div class="mswatch"><input id="cl-c" type="radio" name="5" value="c"> <label for="cl-c" tabindex="0"><img src="assets/no.png"></label></div>
 											</div>
 											
 											<h4 class="product-label">Choose Shirt</h4>
-											<div class="swatch-container"><div class="mswatch"><input id="sh-0" type="radio" name="3" value="0" data-gtm-form-interact-field-id="0"> <label for="sh-0" tabindex="0" ><img src="https://cdn.customily.com/shopify/assetFiles/swatches/interestpod.myshopify.com/f9eb7ef4-510d-44fd-858e-b64ad5467623/169/0e08b202-6e1e-4bdb-86f2-b3d946113ce4.png" ></label></div><div class="mswatch"><input id="sh-2" type="radio" name="3" value="1" data-gtm-form-interact-field-id="1"> <label for="sh-2" tabindex="0" ><img src="https://cdn.customily.com/shopify/assetFiles/swatches/interestpod.myshopify.com/f9eb7ef4-510d-44fd-858e-b64ad5467623/169/7aea5c51-0e81-4d6d-94f6-a51b8acf9f43.png" ></label></div><div class="mswatch"><input id="sh-4" type="radio" name="3" value="2" data-gtm-form-interact-field-id="2"> <label for="sh-4" tabindex="0" ><img src="https://cdn.customily.com/shopify/assetFiles/swatches/interestpod.myshopify.com/f9eb7ef4-510d-44fd-858e-b64ad5467623/169/42f14d0d-b4b3-491b-a6f3-4245019d06c5.png" ></label></div></div>
+											<div class="swatch-container"><div class="mswatch"><input id="sh-0" type="radio" name="3" value="0" data-gtm-form-interact-field-id="0"> <label for="sh-0" tabindex="0" ><img src="assets/shirt1.png" ></label></div><div class="mswatch"><input id="sh-2" type="radio" name="3" value="1" data-gtm-form-interact-field-id="1"> <label for="sh-2" tabindex="0" ><img src="assets/shirt2.png" ></label></div><div class="mswatch"><input id="sh-4" type="radio" name="3" value="2" data-gtm-form-interact-field-id="2"> <label for="sh-4" tabindex="0" ><img src="assets/shirt3.png" ></label></div></div>
                                         </div>
                                     </div><!-- end ngIf: model.color.sizes.length > 0 &&
 													!model.variant.productCategory.groupBySubCategory -->
@@ -624,19 +628,20 @@
 			}
 		});
 		if(radio.name=="4"||radio.name=="5"){
-			if(radio.name=="4"){
-				document.getElementById('img4-5').setAttribute('src','4/'+arr[4]+'/'+arr[5]+'.png'); // vẽ lại tóc cho nhân vật
+			if(radio.name=="4"){ 
 				const images = document.querySelectorAll('div.swatch-container.hair label img');
 				images.forEach(function(img) {
-				  const imgName = img.getAttribute('src').split('/')[2];
-				  const newUrl = '4/' + radio.value + '/' + imgName;
-				  img.setAttribute('src', newUrl);
+				  var old_url = img.getAttribute('src');
+				  const imgName = old_url.substring(old_url.lastIndexOf('/')+1);
+				  if(imgName!="no.png"){
+					  const newUrl = 'women/'+'4/' + radio.value + '/' + imgName;
+					  img.setAttribute('src', newUrl);
+				  }
 				});
 			}
-			
-			document.getElementById('img4-5').setAttribute('src','4/'+arr[4]+'/'+arr[5]+'.png');
+			document.getElementById('img4-5').setAttribute('src','women/'+'4/'+arr[4]+'/'+arr[5]+'.png');// vẽ lại tóc cho nhân vật
 		}else{
-			document.getElementById('img'+radio.name).setAttribute('src',radio.name+'/'+radio.value+'.png');
+			document.getElementById('img'+radio.name).setAttribute('src','women/'+radio.name+'/'+radio.value+'.png');
 		}
 		var variant = arr.join('');
 		if(arr[5]=="c"){
