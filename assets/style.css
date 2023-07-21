@@ -78,3 +78,9 @@ a#nextstep:focus, a#nextstep:hover {
     font-weight: bold;
     font-size: medium;
 }
+.buy-page .prodRow .side-images img {
+    margin-top: 5px;
+}
+.tab-designer li .carousel-thumbnail{
+    margin-top: 8px;
+}

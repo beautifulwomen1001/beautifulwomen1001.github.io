@@ -142,6 +142,7 @@
 		.custome-theme-accent-active-size-background .swatch-item.active {
 			background-color: #2daaef;
 		}
+		.buy-page .prodRow .side-images img.selected,
 		.custom-theme-accent-active-thumbnail .carousel-thumbnail.selected {
 			border: solid 2px #2daaef;
 			border-radius: 5px;
@@ -357,16 +358,16 @@
                                             <!-- ngIf: !isSmallWindow() -->
                                             <div class="side-images hidden-xs hidden-sm custom-theme-accent-sidebar ng-scope" >
                                                 <div class="side-image-box custom-theme-accent-sidebar svg-view-parent ng-scope">
-													<img class="ng-scope active" src="https://gearlaunch-prod-imgix-secure.imgix.net/img/product/UnisexCrew_FRONT_46be88da32.png?fit=clamp&amp;bg=262626&amp;mark64=L2U3ZmM0MmVkLTEwZDYtNGIyNy1iM2I1LTQ1YTg3ODc0Y2NkNA&amp;markw=300&amp;markx=209&amp;marky=98&amp;fm=jpg&amp;q=75&amp;ixlib=java-1.1.0&amp;s=09c9d814421f1c4dfa0532cab422847d" style="">
+													<img width="50" height="50" class="ng-scope" src="men/preview/0.jpg">
     											</div>
 												<div class="side-image-box margin-top-sm custom-theme-accent-sidebar svg-view-parent">
-													<img width="50" height="50" class="ng-scope" src="https://gearlaunch-prod-imgix-secure.imgix.net/img/product/ElevenOunceMug_FRONT_Lifestyle_b010c9e63c.png?fit=clamp&amp;bg=000000&amp;mark64=L2U3ZmM0MmVkLTEwZDYtNGIyNy1iM2I1LTQ1YTg3ODc0Y2NkNA&amp;markw=343&amp;markx=246&amp;marky=153&amp;fm=jpg&amp;q=75&amp;ixlib=java-1.1.0&amp;s=0039f367ed2634ca40177cc2129a3a2c">
+													<img width="50" height="50" class="ng-scope" src="men/preview/1.jpg">
 												</div>
 												<div class="side-image-box margin-top-sm custom-theme-accent-sidebar svg-view-parent">
-													<img width="50" height="50" class="ng-scope" src="https://gearlaunch-prod-imgix-secure.imgix.net/img/product/PulloverHoodie_FRONT_722edad976.png?fit=clamp&bg=262626&mark64=LzQ5ZTczMTlhLTMwOGEtNDc3OC1iZGY2LTNkM2Y5ZTkwZmY3NA&markw=272&markx=217&marky=148&fm=jpg&q=75&ixlib=java-1.1.0&s=20269212ce7023861883cb90c1d9f54d">
+													<img width="50" height="50" class="ng-scope" src="men/preview/2.jpg">
 												</div>
 												<div class="side-image-box margin-top-sm custom-theme-accent-sidebar svg-view-parent">
-													<img width="50" height="50" class="ng-scope" src="assets/preview.png">
+													<img width="50" height="50" class="ng-scope" src="men/preview/3.jpg">
 												</div>
                                             </div><!-- end ngIf: !isSmallWindow() -->
                                         </div>
@@ -386,6 +387,7 @@
 												<img id="img3-4" src="men/4/0/0.png" alt="hair" style="left: 304px;top: 236px;"/>
 												<img id="img3-5" src="men/5/0/0.png" alt="beard" style="left: 330px;top: 292px;"/>
 												<img id="img2" src="men/2/0.png" alt="cigar" style="left: 332px;top: 310px;"/>
+												<img id="preview_img" src="men/preview/0.jpg" style="display:none"/>
 											</div>
                                         </div><!-- end ngIf: !productMock.isSelected -->
                                         <!-- ngIf: productMock.isSelected -->
@@ -425,19 +427,19 @@
 															class="ng-scope">
 															<div ng-repeat="variant in v"
 																 class="carousel-thumbnail-container custom-theme-accent-active-thumbnail svg-view-parent ng-scope">
-																<img class="img-responsive img-responsive-fix prod-img carousel-thumbnail custom-theme-accent-active-thumbnail ng-scope" src="https://gearlaunch-prod-imgix-secure.imgix.net/img/product/UnisexCrew_FRONT_46be88da32.png?fit=clamp&amp;bg=262626&amp;mark64=LzQ5ZTczMTlhLTMwOGEtNDc3OC1iZGY2LTNkM2Y5ZTkwZmY3NA&amp;markw=205&amp;markx=143&amp;marky=67&amp;w=480&amp;fm=jpg&amp;q=75&amp;ixlib=java-1.1.0&amp;s=0d4a7db1808f74cb235e5ed8e440e132">
+																<img class="img-responsive img-responsive-fix prod-img carousel-thumbnail custom-theme-accent-active-thumbnail ng-scope" src="men/preview/0.jpg">
 															</div>
 															<div ng-repeat="variant in v"
 																 class="carousel-thumbnail-container custom-theme-accent-active-thumbnail svg-view-parent ng-scope">
-																<img class="img-responsive img-responsive-fix prod-img carousel-thumbnail custom-theme-accent-active-thumbnail ng-scope" src="https://gearlaunch-prod-imgix-secure.imgix.net/img/product/ElevenOunceMugWhite_FRONT-v1_b51a18c584.png?fit=clamp&bg=000000&mark64=LzQ5ZTczMTlhLTMwOGEtNDc3OC1iZGY2LTNkM2Y5ZTkwZmY3NA&markw=234&markx=168&marky=104&w=480&fm=jpg&q=75&ixlib=java-1.1.0&s=aeff0508330fdaa23e7d17458996f7b0">
+																<img class="img-responsive img-responsive-fix prod-img carousel-thumbnail custom-theme-accent-active-thumbnail ng-scope" src="men/preview/1.jpg">
 															</div>
 															<div ng-repeat="variant in v"
 																 class="carousel-thumbnail-container custom-theme-accent-active-thumbnail svg-view-parent ng-scope">
-																<img class="img-responsive img-responsive-fix prod-img carousel-thumbnail custom-theme-accent-active-thumbnail ng-scope" src="https://gearlaunch-prod-imgix-secure.imgix.net/img/product/PulloverHoodie_FRONT_722edad976.png?fit=clamp&bg=262626&mark64=LzQ5ZTczMTlhLTMwOGEtNDc3OC1iZGY2LTNkM2Y5ZTkwZmY3NA&markw=272&markx=217&marky=148&fm=jpg&q=75&ixlib=java-1.1.0&s=20269212ce7023861883cb90c1d9f54d">
+																<img class="img-responsive img-responsive-fix prod-img carousel-thumbnail custom-theme-accent-active-thumbnail ng-scope" src="men/preview/2.jpg">
 															</div>
 															<div ng-repeat="variant in v"
 																 class="carousel-thumbnail-container custom-theme-accent-active-thumbnail svg-view-parent ng-scope">
-																<img class="img-responsive img-responsive-fix prod-img carousel-thumbnail custom-theme-accent-active-thumbnail ng-scope" src="assets/preview.png">
+																<img class="img-responsive img-responsive-fix prod-img carousel-thumbnail custom-theme-accent-active-thumbnail ng-scope" src="men/preview/3.jpg">
 															</div>
 														</li>
 													</ul>
@@ -633,17 +635,38 @@
     </footer>
 </div>
 <script type="text/javascript">
-	document.getElementById("face0").click();
 	document.querySelectorAll(".swatch-container").forEach(function(swatchContainer) {
 	  swatchContainer.querySelector(".mswatch:first-child input").click();
 	});
+	document.querySelectorAll("ul.carousel img").forEach(function(img){
+		img.addEventListener("click", function(){
+			document.querySelectorAll("div.side-images img.selected,ul.carousel img.selected").forEach(function(img2){
+				img2.classList.remove('selected');
+			});
+			this.classList.add('selected');
+			
+			var url = this.getAttribute("src");
+			document.querySelector("#preview_img").setAttribute("src",url);
+			document.querySelector("#preview_img").style.display = "block";
+		});
+	});
+	document.querySelectorAll("div.side-images img").forEach(function(img){
+		img.addEventListener("click", function(){
+			document.querySelectorAll("div.side-image-box.active").forEach(function(img2){
+				img2.classList.remove('active');
+			});
+			this.parentElement.classList.add('active');
+			var url = this.getAttribute("src");
+			document.querySelector("#preview_img").setAttribute("src",url);
+			document.querySelector("#preview_img").style.display = "block";
+		});
+	});
+
 	
 	var radios = document.querySelectorAll('.swatch-container input[type=radio]');
-	/*
-	document.getElementById("productImageId").onload = function() {
-		this.style.opacity = 1;
-	};
-	*/
+    radios.forEach(radio => radio.addEventListener('click', function(){
+		document.getElementById('preview_img').style.display="none";
+	}));
 	var arr = '000000'.split('');
     radios.forEach(radio => radio.addEventListener('change', function(){
 		console.log('name:',radio.name,'value:',radio.value);
