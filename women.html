@@ -142,7 +142,6 @@
 		.custome-theme-accent-active-size-background .swatch-item.active {
 			background-color: #2daaef;
 		}
-		.buy-page .prodRow .side-images img.selected,
 		.custom-theme-accent-active-thumbnail .carousel-thumbnail.selected {
 			border: solid 2px #2daaef;
 			border-radius: 5px;
@@ -346,16 +345,16 @@
                                             <!-- ngIf: !isSmallWindow() -->
                                             <div class="side-images hidden-xs hidden-sm custom-theme-accent-sidebar ng-scope" >
                                                 <div class="side-image-box custom-theme-accent-sidebar svg-view-parent ng-scope">
-													<img width="50" height="50" class="ng-scope" src="men/preview/0.jpg">
+													<img width="50" height="50" class="ng-scope" src="women/preview/0.jpg">
     											</div>
 												<div class="side-image-box margin-top-sm custom-theme-accent-sidebar svg-view-parent">
-													<img width="50" height="50" class="ng-scope" src="men/preview/1.jpg">
+													<img width="50" height="50" class="ng-scope" src="women/preview/1.jpg">
 												</div>
 												<div class="side-image-box margin-top-sm custom-theme-accent-sidebar svg-view-parent">
-													<img width="50" height="50" class="ng-scope" src="men/preview/2.jpg">
+													<img width="50" height="50" class="ng-scope" src="women/preview/2.jpg">
 												</div>
 												<div class="side-image-box margin-top-sm custom-theme-accent-sidebar svg-view-parent">
-													<img width="50" height="50" class="ng-scope" src="men/preview/3.jpg">
+													<img width="50" height="50" class="ng-scope" src="women/preview/3.jpg">
 												</div>
                                             </div><!-- end ngIf: !isSmallWindow() -->
                                         </div>
@@ -368,15 +367,13 @@
                                         <div id="productImageHolder">
 											<div id="drawit">
 												<img src="bg.jpg"/>
-												<img id="img0" src="men/0/0.png" alt="body" style="left: 295px;top: 252px;"/>
-												<img src="men/shirt.png" alt="shirt" style="left: 288px;top: 315px;"/>
-												<img id="hand" src="men/hand/0.png" alt="hand" style="left: 327px;top: 372px;"/>
-												<img id="img1" src="men/1/1.png" alt="face" style="left: 336px;top: 270px;"/>
-												<img id="img3-4" src="men/4/0/0.png" alt="hair" style="left: 304px;top: 236px;"/>
-												<img id="img3-5" src="men/5/0/0.png" alt="beard" style="left: 330px;top: 292px;"/>
-												<img id="img2" src="men/2/0.png" alt="cigar" style="left: 332px;top: 310px;"/>
+												<img id="img2" src="women/2/0.png" style="left: 298px;top: 253px;"/>
+												<img id="img3" src="women/3/0.png" style="left: 295px;top: 319px;"/>
+												<img id="img4-5" src="women/4/5/b.png" style="left: 298px;top: 223px;"/>
+												<img id="img1" src="women/1/1.png" style="left: 344px;top: 294px;"/>
+												<img id="img0" src="women/0/0.png" style="left: 330px;top: 288px;"/>
 												<img id="yourname" src="assets/yourname.png" style="left: 308px;top: 440px;"/>
-												<img id="preview_img" src="men/preview/0.jpg" style="display:none"/>
+												<img id="preview_img" src="women/preview/0.jpg" style="display:none"/>
 											</div>
                                         </div><!-- end ngIf: !productMock.isSelected -->
                                         <!-- ngIf: productMock.isSelected -->
@@ -416,19 +413,19 @@
 															class="ng-scope">
 															<div ng-repeat="variant in v"
 																 class="carousel-thumbnail-container custom-theme-accent-active-thumbnail svg-view-parent ng-scope">
-																<img class="img-responsive img-responsive-fix prod-img carousel-thumbnail custom-theme-accent-active-thumbnail ng-scope" src="men/preview/0.jpg">
+																<img class="img-responsive img-responsive-fix prod-img carousel-thumbnail custom-theme-accent-active-thumbnail ng-scope" src="women/preview/0.jpg">
 															</div>
-															<div ng-repeat="variant in v"
-																 class="carousel-thumbnail-container custom-theme-accent-active-thumbnail svg-view-parent ng-scope">
-																<img class="img-responsive img-responsive-fix prod-img carousel-thumbnail custom-theme-accent-active-thumbnail ng-scope" src="men/preview/1.jpg">
+															<div ng-repeat="variant in v"                                                                                                     
+																 class="carousel-thumbnail-container custom-theme-accent-active-thumbnail svg-view-parent ng-scope">                          
+																<img class="img-responsive img-responsive-fix prod-img carousel-thumbnail custom-theme-accent-active-thumbnail ng-scope" src="women/preview/1.jpg">
 															</div>
-															<div ng-repeat="variant in v"
-																 class="carousel-thumbnail-container custom-theme-accent-active-thumbnail svg-view-parent ng-scope">
-																<img class="img-responsive img-responsive-fix prod-img carousel-thumbnail custom-theme-accent-active-thumbnail ng-scope" src="men/preview/2.jpg">
+															<div ng-repeat="variant in v"                                                                                                     
+																 class="carousel-thumbnail-container custom-theme-accent-active-thumbnail svg-view-parent ng-scope">                          
+																<img class="img-responsive img-responsive-fix prod-img carousel-thumbnail custom-theme-accent-active-thumbnail ng-scope" src="women/preview/2.jpg">
 															</div>
-															<div ng-repeat="variant in v"
-																 class="carousel-thumbnail-container custom-theme-accent-active-thumbnail svg-view-parent ng-scope">
-																<img class="img-responsive img-responsive-fix prod-img carousel-thumbnail custom-theme-accent-active-thumbnail ng-scope" src="men/preview/3.jpg">
+															<div ng-repeat="variant in v"                                                                                                     
+																 class="carousel-thumbnail-container custom-theme-accent-active-thumbnail svg-view-parent ng-scope">                          
+																<img class="img-responsive img-responsive-fix prod-img carousel-thumbnail custom-theme-accent-active-thumbnail ng-scope" src="women/preview/3.jpg">
 															</div>
 														</li>
 													</ul>
@@ -458,76 +455,53 @@
 											<div class="option_title">Personalized options</div>
 											<h4 class="product-label">Choose Character</h4>
 											<div class="swatch-container">
-											   <div class="mswatch"><input style="display:none"/><a href="women.html"><label><img src="assets/women.png"/></label></a></div>
-											   <div class="mswatch"><a href="#"><label class="choosen"><img src="assets/men.png"/></label></a></div>
+											   <div class="mswatch"><input style="display:none"/><a href="#"><label class="choosen"><img src="assets/women.png"/></label></a></div>
+											   <div class="mswatch"><a href="men.html"><label><img src="assets/men.png"/></label></a></div>
 											</div>
-                                            <h4 class="product-label">Choose Man Skin Tone</h4>
+											<h4 class="product-label">Face's Woman</h4>
 											<div class="swatch-container">
-												<div class="mswatch"><input id="sk0" type="radio" name="0" value="0"> <label for="sk0" style="background-color: rgb(253, 221, 196);" tabindex="0"><!----></label></div>
-												<div class="mswatch"><input id="sk2" type="radio" name="0" value="2"> <label for="sk2" style="background-color: rgb(240, 179, 135);" tabindex="0"><!----></label></div>
-												<div class="mswatch"><input id="sk3" type="radio" name="0" value="3"> <label for="sk3" style="background-color: rgb(168, 108, 75);" tabindex="0"><!----></label></div>
-												<div class="mswatch"><input id="sk1" type="radio" name="0" value="1"> <label for="sk1" style="background-color: rgb(117, 51, 27);" tabindex="0"><!----></label></div>
-											</div>
-											<h4 class="product-label">Choose Man Face</h4>
-											<div class="swatch-container">
-											   <div class="mswatch"><input id="face0" type="radio" name="1" value="1"> <label for="face0" tabindex="0" ><img src="assets/young.png"></label></div>
-											   <div class="mswatch"><input id="face1" type="radio" name="1" value="0"> <label for="face1"  tabindex="0"><img src="assets/old.png"></label></div>
-											</div>
-											<h4 class="product-label">Add Tabacco/ Cigar</h4>
-											<div class="swatch-container">
-											  <div class="mswatch"><input id="cg0" type="radio" name="2" value="0"> <label for="cg0" tabindex="0"><img src="men/2/0.png" style="width: 26px;height: auto;margin-top: 13px;margin-left: 16px;"></label></div>
-											   <div class="mswatch"><input id="cg1" type="radio" name="2" value="1"> <label for="cg1" tabindex="0"><img src="men/2/1.png" style="width: 28px;height: auto;margin-top: 21px;margin-left: 13px;"></label></div>
-											   <div class="mswatch"><input id="cg2" type="radio" name="2" value="2"> <label for="cg2" tabindex="0"><img src="assets/no.png"></label></div>
-											</div>
-											<h4 class="product-label">Choose Man Hair & Beard Color</h4>
-											<div  class ="swatch-container">
-												<div  class="mswatch"><input  id="hc-0" type="radio" name="3" value="0"> <label  for="hc-0" tabindex="0" style="background:#0c0c0c"></label></div>
-												<div  class="mswatch"><input  id="hc-1" type="radio" name="3" value="1"> <label  for="hc-1" tabindex="0" style="background:#ad0b0b"></label></div>
+											   <div class="mswatch"><input id="gl-0" type="radio" name="1" value="1"> <label for="gl-0" tabindex="0" ><img src="assets/young.png"></label></div>
+											   <div class="mswatch"><input id="gl-1" type="radio" name="1" value="0"> <label for="gl-1" tabindex="0" ><img src="assets/old.png"></label></div>
 											</div>
 											
-											<h4>Choose Man Hairstyle</h4>
-											<div class="swatch-container hair_beard hair">
-												<div class="mswatch"><input id="cl-0" type="radio" name="4" value="0"> <label for="cl-0" tabindex="0"><img src="men/4/0/0.png" style="width: 65px;margin-left: -12px;"></label></div>
-												<div class="mswatch"><input id="cl-1" type="radio" name="4" value="1"> <label for="cl-1" tabindex="0"><img src="men/4/0/1.png" style="margin-top: -4px;margin-left: -18px;width: 74px;"></label></div>
-												<div class="mswatch"><input id="cl-2" type="radio" name="4" value="2"> <label for="cl-2" tabindex="0"><img src="men/4/0/2.png" style="width: 72px;margin-top: -3px;margin-left: -16px;"></label></div>
-												<div class="mswatch"><input id="cl-3" type="radio" name="4" value="3"> <label for="cl-3" tabindex="0"><img src="men/4/0/3.png" style="margin-top: -13px;width: 72px;margin-left: -19px;"></label></div>
-												<div class="mswatch"><input id="cl-4" type="radio" name="4" value="4"> <label for="cl-4" tabindex="0"><img src="men/4/0/4.png" style="width: 67px;margin-top: -2px;margin-left: -13px;"></label></div>
-												<div class="mswatch"><input id="cl-5" type="radio" name="4" value="5"> <label for="cl-5" tabindex="0"><img src="men/4/0/5.png" style="width: 67px;margin-top: -3px;margin-left: -14px;"></label></div>
-												<div class="mswatch"><input id="cl-6" type="radio" name="4" value="6"> <label for="cl-6" tabindex="0"><img src="men/4/0/6.png" style="width: 67px;margin-top: -1px;margin-left: -14px;"></label></div>
-												<div class="mswatch"><input id="cl-7" type="radio" name="4" value="7"> <label for="cl-7" tabindex="0"><img src="men/4/0/7.png" style="width: 71px;margin-top: -3px;margin-left: -17px;"></label></div>
-												<div class="mswatch"><input id="cl-8" type="radio" name="4" value="8"> <label for="cl-8" tabindex="0"><img src="men/4/0/8.png" style="width: 55px;margin-top: -3px;margin-left: -5px;"></label></div>
-												<div class="mswatch"><input id="cl-9" type="radio" name="4" value="9"> <label for="cl-9" tabindex="0"><img src="men/4/0/9.png" style="width: 42px;margin-top: -3px;margin-left: 2px;"></label></div>
-												<div class="mswatch"><input id="cl-a" type="radio" name="4" value="a"> <label for="cl-a" tabindex="0"><img src="men/4/0/a.png" style="width: 50px;margin-top: -5px;margin-left: -3px;"></label></div>
-												<div class="mswatch"><input id="cl-b" type="radio" name="4" value="b"> <label for="cl-b" tabindex="0"><img src="men/4/0/b.png" style="width: 54px;margin-top: -2px;margin-left: -1px;"></label></div>
-												<div class="mswatch"><input id="cl-c" type="radio" name="4" value="c"> <label for="cl-c" tabindex="0"><img src="men/4/0/c.png" style="width: 58px;margin-top: 3px;margin-left: -10px;"></label></div>
-												<div class="mswatch"><input id="cl-d" type="radio" name="4" value="d"> <label for="cl-d" tabindex="0"><img src="men/4/0/d.png" style="width: 59px;margin-top: -2px;margin-left: -8px;"></label></div>
-												<div class="mswatch"><input id="cl-e" type="radio" name="4" value="e"> <label for="cl-e" tabindex="0"><img src="men/4/0/e.png" style="width: 53px;margin-top: -11px;margin-left: -6px;"></label></div>
-												<div class="mswatch"><input id="cl-f" type="radio" name="4" value="f"> <label for="cl-f" tabindex="0"><img src="men/4/0/f.png" style="width: 62px;margin-top: 3px;margin-left: -13px;"></label></div>
-												<div class="mswatch"><input id="cl-g" type="radio" name="4" value="g"> <label for="cl-g" tabindex="0"><img src="men/4/0/f.png" style="width: 63px;margin-top: 2px;margin-left: -13px;"></label></div>
-												<div class="mswatch"><input id="cl-h" type="radio" name="4" value="h"> <label for="cl-h" tabindex="0"><img src="men/4/0/h.png" style="width: 56px;margin-top: 4px;margin-left: -7px;"></label></div>
-												<div class="mswatch"><input id="cl-i" type="radio" name="4" value="i"> <label for="cl-i" tabindex="0"><img src="men/4/0/i.png" style="width: 57px;margin-top: 0px;margin-left: -6px;"></label></div>
-												<div class="mswatch"><input id="cl-j" type="radio" name="4" value="j"> <label for="cl-j" tabindex="0"><img src="men/4/0/j.png" style="width: 58px;margin-top: -1px;margin-left: -6px;"></label></div>
-												<div class="mswatch"><input id="cl-k" type="radio" name="4" value="k"> <label for="cl-k" tabindex="0"><img src="men/4/0/k.png" style="width: 63px;margin-top: 0px;margin-left: -12px;"></label></div>
-												<div class="mswatch"><input id="cl-l" type="radio" name="4" value="l"> <label for="cl-l" tabindex="0"><img src="men/4/0/l.png" style="width: 54px;margin-top: 0px;margin-left: 0px;"></label></div>
-												<div class="mswatch"><input id="cl-m" type="radio" name="4" value="m"> <label for="cl-m" tabindex="0"><img src="men/4/0/m.png" style="width: 60px;margin-top: 6px;margin-left: -7px;"></label></div>
-												<div class="mswatch"><input id="cl-n" type="radio" name="4" value="n"> <label for="cl-n" tabindex="0"><img src="men/4/0/n.png" style="width: 61px;margin-top: 7px;margin-left: -9px;"></label></div>
-												<div class="mswatch"><input id="cl-z" type="radio" name="4" value="z"> <label for="cl-z" tabindex="0"><img src="assets/no.png"></label></div>
+											<h4 class="product-label">Choose Glasses</h4>
+											<div class="swatch-container">
+												<div class="mswatch"><input id="face0" type="radio" name="0" value="0"> <label for="face0" tabindex="0" ><img src="assets/glasses.png" ></label></div>
+												<div class="mswatch"><input id="face1" type="radio" name="0" value="1"> <label for="face1"  tabindex="0"><img src="assets/no.png" ></label></div>
 											</div>
-											<h4>Choose Man Beard</h4>
-											<div class="swatch-container hair_beard">
-												<div class="mswatch"><input id="b-0" type="radio" name="5" value="0"> <label for="b-0" tabindex="0"><img src="men/5/0/0.png" style="width: 63px;margin-top: 8px;margin-left: -2px;"></label></div>
-												<div class="mswatch"><input id="b-1" type="radio" name="5" value="1"> <label for="b-1" tabindex="0"><img src="men/5/0/1.png" style="margin-top: 8px;margin-left: 2px;"></label></div>
-												<div class="mswatch"><input id="b-2" type="radio" name="5" value="2"> <label for="b-2" tabindex="0"><img src="men/5/0/2.png" style="width: 53px;margin-top: -1px;margin-left: 1px;"></label></div>
-												<div class="mswatch"><input id="b-3" type="radio" name="5" value="3"> <label for="b-3" tabindex="0"><img src="men/5/0/3.png" style="margin-top: 10px;width: 55px;margin-left: 1px;"></label></div>
-												<div class="mswatch"><input id="b-4" type="radio" name="5" value="4"> <label for="b-4" tabindex="0"><img src="men/5/0/4.png" style="width: 60px;margin-top: 5px;margin-left: -1px;"></label></div>
-												<div class="mswatch"><input id="b-5" type="radio" name="5" value="5"> <label for="b-5" tabindex="0"><img src="men/5/0/5.png" style="width: 58px;margin-top: 6px;margin-left: -2px;"></label></div>
-												<div class="mswatch"><input id="b-6" type="radio" name="5" value="6"> <label for="b-6" tabindex="0"><img src="men/5/0/6.png" style="width: 49px;margin-top: 0px;margin-left: 5px;"></label></div>
-												<div class="mswatch"><input id="b-7" type="radio" name="5" value="7"> <label for="b-7" tabindex="0"><img src="men/5/0/7.png" style="width: 61px;margin-top: 6px;margin-left: -2px;"></label></div>
-												<div class="mswatch"><input id="b-8" type="radio" name="5" value="8"> <label for="b-8" tabindex="0"><img src="men/5/0/8.png" style="width: 60px;margin-top: 8px;margin-left: -2px;"></label></div>
-												<div class="mswatch"><input id="b-9" type="radio" name="5" value="9"> <label for="b-9" tabindex="0"><img src="men/5/0/9.png" style="width: 60px;margin-top: -2px;margin-left: -2px;"></label></div>
-												<div class="mswatch"><input id="b-a" type="radio" name="5" value="a"> <label for="b-a" tabindex="0"><img src="men/5/0/a.png" style="width: 63px;margin-top: -8px;margin-left: -3px;"></label></div>
-												<div class="mswatch"><input id="b-z" type="radio" name="5" value="z"> <label for="b-z" tabindex="0"><img src="assets/no.png"></label></div>
+											
+                                            <h4 class="product-label">Choose Woman Skin Tone</h4>
+											<div class="swatch-container"><div class="mswatch"><input id="sk1" type="radio" name="2" value="0"> <label for="sk1" style="background-color: rgb(253, 221, 196);" tabindex="0"><!----></label></div><div class="mswatch"><input id="sk2" type="radio" name="2" value="1"> <label for="sk2" style="background-color: rgb(240, 179, 135);" tabindex="0"><!----></label></div><div class="mswatch"><input id="sk4" type="radio" name="2" value="2"> <label for="sk4" style="background-color: rgb(168, 108, 75);" tabindex="0"><!----></label></div><div class="mswatch"><input id="sk3" type="radio" name="2" value="3"> <label for="sk3" style="background-color: rgb(117, 51, 27);" tabindex="0"><!----></label></div></div>
+											
+											<h4 class="product-label">Choose Woman Hair Color</h4>
+											<div  class ="swatch-container">
+												<div  class="mswatch"><input  id="hc-5" type="radio" name="4" value="5"> <label  for="hc-5" tabindex="0" style="background:#a9a8a8"></label></div>
+												<div  class="mswatch"><input  id="hc-4" type="radio" name="4" value="4"> <label  for="hc-4" tabindex="0" style="background:#777474"></label></div>
+												<div  class="mswatch"><input  id="hc-3" type="radio" name="4" value="3"> <label  for="hc-3" tabindex="0" style="background:#ad0b0b"></label></div>
+												<div  class="mswatch"><input  id="hc-2" type="radio" name="4" value="2"> <label  for="hc-2" tabindex="0" style="background:#925b13"></label></div>
+												<div  class="mswatch"><input  id="hc-1" type="radio" name="4" value="1"> <label  for="hc-1" tabindex="0" style="background:#f3bc30"></label></div>
+												<div  class="mswatch"><input  id="hc-0" type="radio" name="4" value="0"> <label  for="hc-0" tabindex="0" style="background:#0c0c0c"></label></div>
 											</div>
+											
+											<h4>Woman Hairstyle</h4>
+											<div class="swatch-container hair">
+												<div class="mswatch"><input id="cl-b" type="radio" name="5" value="b"> <label for="cl-b" tabindex="0"><img src="women/4/5/b.png" style=" width: 46px;margin-top: -10px;margin-left: 3px;"></label></div>
+												<div class="mswatch"><input id="cl-0" type="radio" name="5" value="0"> <label for="cl-0" tabindex="0"><img src="women/4/5/0.png" style="width: 61px;margin-top: -17px;margin-left: -9px;"></label></div>
+												<div class="mswatch"><input id="cl-1" type="radio" name="5" value="1"> <label for="cl-1" tabindex="0"><img src="women/4/5/1.png" style="margin-top: -7px;margin-left: -1px;"></label></div>
+												<div class="mswatch"><input id="cl-2" type="radio" name="5" value="2"> <label for="cl-2" tabindex="0"><img src="women/4/5/2.png" style="width: 57px;margin-top: 0px;margin-left: -8px;"></label></div>
+												<div class="mswatch"><input id="cl-3" type="radio" name="5" value="3"> <label for="cl-3" tabindex="0"><img src="women/4/5/3.png" style="margin-top: -5px;width: 50px;margin-left: 3px;"></label></div>
+												<div class="mswatch"><input id="cl-4" type="radio" name="5" value="4"> <label for="cl-4" tabindex="0"><img src="women/4/5/4.png" style="width: 64px;margin-top: -17px;margin-left: -12px;"></label></div>
+												<div class="mswatch"><input id="cl-5" type="radio" name="5" value="5"> <label for="cl-5" tabindex="0"><img src="women/4/5/5.png" style="width: 69px;margin-top: -14px;margin-left: -15px;"></label></div>
+												<div class="mswatch"><input id="cl-6" type="radio" name="5" value="6"> <label for="cl-6" tabindex="0"><img src="women/4/5/6.png" style="width: 71px;margin-top: -10px;margin-left: -18px;"></label></div>
+												<div class="mswatch"><input id="cl-7" type="radio" name="5" value="7"> <label for="cl-7" tabindex="0"><img src="women/4/5/7.png" style="width: 77px;margin-top: -16px;margin-left: -24px;"></label></div>
+												<div class="mswatch"><input id="cl-8" type="radio" name="5" value="8"> <label for="cl-8" tabindex="0"><img src="women/4/5/8.png" style="width: 67px;margin-top: -8px;margin-left: -15px;"></label></div>
+												<div class="mswatch"><input id="cl-9" type="radio" name="5" value="9"> <label for="cl-9" tabindex="0"><img src="women/4/5/9.png" style="width: 43px;margin-top: -11px;margin-left: 4px;"></label></div>
+												<div class="mswatch"><input id="cl-a" type="radio" name="5" value="a"> <label for="cl-a" tabindex="0"><img src="women/4/5/a.png" style="width: 47px;margin-top: -9px;margin-left: 3px;"></label></div>
+												<div class="mswatch"><input id="cl-c" type="radio" name="5" value="c"> <label for="cl-c" tabindex="0"><img src="assets/no.png"></label></div>
+											</div>
+											
+											<h4 class="product-label">Choose Shirt</h4>
+											<div class="swatch-container"><div class="mswatch"><input id="sh-0" type="radio" name="3" value="0" data-gtm-form-interact-field-id="0"> <label for="sh-0" tabindex="0" ><img src="assets/shirt1.png" ></label></div><div class="mswatch"><input id="sh-2" type="radio" name="3" value="1" data-gtm-form-interact-field-id="1"> <label for="sh-2" tabindex="0" ><img src="assets/shirt2.png" ></label></div><div class="mswatch"><input id="sh-4" type="radio" name="3" value="2" data-gtm-form-interact-field-id="2"> <label for="sh-4" tabindex="0" ><img src="assets/shirt3.png" ></label></div></div>
                                         </div>
                                     </div><!-- end ngIf: model.color.sizes.length > 0 &&
 													!model.variant.productCategory.groupBySubCategory -->
@@ -575,7 +549,7 @@
                             <div ng-if="screenSize.getScreenSize() >= screenSize.screenSizes.sm"
                                  class="qty-and-add-cart-container row ng-scope" style="">
                                     <div class="button-container">
-                                        <a id="nextstep" class="btn btn-cc btn-spinner buy-it-now-btn add-to-cart-btn custom-theme-btn ng-binding ng-scope" href="https://olivas.shop/i-walked-the-walk-us-army-veteran-men-010000?s=hanes-5250&c=Black&p=FRONT&pr=10">Next step: Add your name</a>
+                                        <a id="nextstep" class="btn btn-cc btn-spinner buy-it-now-btn add-to-cart-btn custom-theme-btn ng-binding ng-scope" href="https://olivas.shop/i-walked-the-walk-us-army-veteran-01005b?s=hanes-5250&c=Black&p=FRONT&pr=10">Next step: Add your name</a>
                                     </div>
                             </div>
                             <!-- end ngIf: screenSize.getScreenSize() >= screenSize.screenSizes.sm -->
@@ -590,7 +564,7 @@
             ng-class="{'mobile-footer': screenSize.getScreenSize() < screenSize.screenSizes.sm}"
             style="">
         <div class="text-center">
-           <img style="max-width:190px" class="img-header-tiny logo" src="assets/logo.png"/>
+            <img style="max-width:190px" class="img-header-tiny logo" src="assets/logo.png">
             <div ng-bind="store.support.email" class="store-email ng-binding">support@olivas.shop
             </div>
             <div class="store-email">+1 855-999-7840 (9AM - 5PM PST, Mon - Fri)</div>
@@ -646,13 +620,13 @@
 			document.querySelector("#preview_img").style.display = "block";
 		});
 	});
-
 	
+	 
 	var radios = document.querySelectorAll('.swatch-container input[type=radio]');
-    radios.forEach(radio => radio.addEventListener('click', function(){
+	radios.forEach(radio => radio.addEventListener('click', function(){
 		document.getElementById('preview_img').style.display="none";
 	}));
-	var arr = '000000'.split('');
+	var arr = '01005b'.split('');
     radios.forEach(radio => radio.addEventListener('change', function(){
 		console.log('name:',radio.name,'value:',radio.value);
 		radios.forEach(_radio=>{
@@ -660,37 +634,28 @@
 				arr[_radio.name] = _radio.value;
 			}
 		});
-		console.log(arr[3]);
-		if(radio.name=="3"||radio.name=="4"||radio.name=="5"){
-			if(radio.name=="3"){ // change color
-				const images = document.querySelectorAll('div.swatch-container.hair_beard label img');
-				images.forEach(function(img) { // vẽ lại ảnh thumb swatch tóc
+		if(radio.name=="4"||radio.name=="5"){
+			if(radio.name=="4"){ 
+				const images = document.querySelectorAll('div.swatch-container.hair label img');
+				images.forEach(function(img) {
 				  var old_url = img.getAttribute('src');
-				  console.log({old_url});
 				  const imgName = old_url.substring(old_url.lastIndexOf('/')+1);
-				  const startPath = old_url.substring(0,6);
 				  if(imgName!="no.png"){
-					  const newUrl = startPath + radio.value + '/' + imgName;
+					  const newUrl = 'women/'+'4/' + radio.value + '/' + imgName;
 					  img.setAttribute('src', newUrl);
 				  }
 				});
 			}
-			document.getElementById('img3-4').setAttribute('src','men/'+'4/'+arr[3]+'/'+arr[4]+'.png');// vẽ lại tóc cho nhân vật
-			document.getElementById('img3-5').setAttribute('src','men/'+'5/'+arr[3]+'/'+arr[5]+'.png');// vẽ lại râu cho nhân vật
+			document.getElementById('img4-5').setAttribute('src','women/'+'4/'+arr[4]+'/'+arr[5]+'.png');// vẽ lại tóc cho nhân vật
 		}else{
-			document.getElementById('img'+radio.name).setAttribute('src','men/'+radio.name+'/'+radio.value+'.png');
-			if(radio.name=="0") document.getElementById('hand').setAttribute('src','men/hand/'+radio.value+'.png'); // vẽ lại tay
+			document.getElementById('img'+radio.name).setAttribute('src','women/'+radio.name+'/'+radio.value+'.png');
 		}
 		var variant = arr.join('');
-		if(arr[4]=="z"){ // không tóc
-			if(arr[5]=="z"){ 
-				variant = variant.substring(0, 3);// không râu -> chỉ dùng 3 ký tự
-			}else{
-				variant = variant.replace("z","");// có râu -> chỉ dùng 5 ký tự
-			}
+		if(arr[5]=="c"){
+			variant = variant.slice(0, -2);
 		}
 		console.log(variant);
-		var new_href = "https://olivas.shop/i-walked-the-walk-us-army-veteran-men-"+variant+"?s=hanes-5250&c=Black&p=FRONT&pr=10";
+		var new_href = "https://olivas.shop/i-walked-the-walk-us-army-veteran-"+variant+"?s=hanes-5250&c=Black&p=FRONT&pr=10";
 		console.log(new_href);
 		document.getElementById('nextstep').setAttribute('href',new_href);
 	}));

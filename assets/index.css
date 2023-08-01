@@ -1,0 +1,39 @@
+.storefront-thumbnail .thumbnail .price-tag {
+    width: 85px;
+    color: #fff;
+    padding: 5px 10px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    z-index: 3;
+}
+.storefront-thumbnail .thumbnail .img-container {
+    height: auto;
+}
+.storefront-thumbnail .thumbnail {
+    height: auto;
+    margin-bottom: 0;
+    position: relative;
+}
+.name-days-container h5 {
+    margin-top: 0;
+    line-height: 1.5em;
+    word-wrap: break-word;
+}
+.home-page {
+    padding-bottom: 50px;
+}
+@media (max-width: 767px){
+	.storefront-thumbnail .thumbnail .price-tag {
+		bottom: 55px;
+		font-size: 1.3em;
+	}
+	.name-days-container h5 {
+		font-size: 1.25em;
+	}
+}
+@media (min-width: 1200px){
+	.storefront-thumbnail .thumbnail .price-tag {
+		top: 200px;
+	}
+}
