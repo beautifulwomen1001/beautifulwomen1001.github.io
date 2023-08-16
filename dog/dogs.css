@@ -1,0 +1,216 @@
+.dog_num_1 .nth5, .dog_num_2 .nth5,.dog_num_3 .nth5,.dog_num_4 .nth5,
+.dog_num_1 .nth4, .dog_num_2 .nth4,.dog_num_3 .nth4,
+.dog_num_1 .nth3, .dog_num_2 .nth3,
+.dog_num_1 .nth2{
+	display:none;
+}
+/* 1 dogs*/
+.dog_num_1 #wings1{
+	width:286px;
+	left: 296px;
+	top: 403px;
+}
+.dog_num_1 #dog1{
+	width:149px;
+	left: 365px;
+	top: 346px;
+}
+.dog_num_1 #cloud1{
+	width:147px;
+	left: 363px;
+	top: 459px;
+}
+
+/* 2 dogs*/
+.dog_num_2 #wings1{
+	width:218px;
+	left: 361px;
+	top: 344px;
+}
+.dog_num_2 #dog1{
+	width:130px;
+	left: 408px;
+	top: 288px;
+}
+.dog_num_2 #cloud1{
+	width:111px;
+	left: 418px;
+	top: 386px;
+}
+.dog_num_2 #wings2{
+	width:218px;
+	left: 250px;
+	top: 500px;
+}
+.dog_num_2 #dog2{
+	width:130px;
+	left: 293px;
+	top: 444px;
+}
+.dog_num_2 #cloud2{
+	width:111px;
+	left: 303px;
+	top: 543px;
+}
+
+/* 3 dogs, 4dogs, 5 dogs*/
+#wings1,#wings2,#wings3,#wings4,#wings5{
+	width:166px;
+}
+#dog1,#dog2,#dog3,#dog4,#dog5{
+	width:90px;
+}
+#cloud1,#cloud2,#cloud3,#cloud4,#cloud5{
+	width:84px;
+}
+/* 3 dogs */
+.dog_num_3 #wings1{
+	left: 314px;
+	top: 364px;
+}
+.dog_num_3 #dog1{
+	left: 351px;
+	top: 330px;
+}
+.dog_num_3 #cloud1{
+	left: 354px;
+	top: 396px;
+}
+
+.dog_num_3 #wings2{
+	left: 397px;
+	top: 467px;
+}
+.dog_num_3 #dog2{
+	left: 435px;
+	top: 432px;
+}
+.dog_num_3 #cloud2{
+	left: 437px;
+	top: 499px;
+}
+.dog_num_3 #wings3{
+	left: 230px;
+	top: 500px;
+}
+.dog_num_3 #dog3{
+	left: 268px;
+	top: 466px;
+}
+.dog_num_3 #cloud3{
+	left: 270px;
+	top: 532px;
+}
+
+/* 4 dogs */
+.dog_num_4 #wings1{
+	left: 314px;
+	top: 279px;
+}
+.dog_num_4 #dog1{
+	left: 351px;
+	top: 245px;
+}
+.dog_num_4 #cloud1{
+	left: 354px;
+	top: 311px;
+}
+
+.dog_num_4 #wings2{
+	left: 397px;
+	top: 382px;
+}
+.dog_num_4 #dog2{
+	left: 435px;
+	top: 347px;
+}
+.dog_num_4 #cloud2{
+	left: 437px;
+	top: 414px;
+}
+.dog_num_4 #wings3{
+	left: 230px;
+	top: 415px;
+}
+.dog_num_4 #dog3{
+	left: 268px;
+	top: 381px;
+}
+.dog_num_4 #cloud3{
+	left: 270px;
+	top: 447px;
+}
+.dog_num_4 #wings4{
+	left: 341px;
+	top: 505px;
+}
+.dog_num_4 #dog4{
+	left: 378px;
+	top: 471px;
+}
+.dog_num_4 #cloud4{
+	left: 381px;
+	top: 537px;
+}
+
+/* 5 dogs */
+.dog_num_5 #wings1{
+	left: 352px;
+	top: 255px;
+}
+.dog_num_5 #dog1{
+	left: 389px;
+	top: 221px;
+}
+.dog_num_5 #cloud1{
+	left: 392px;
+	top: 287px;
+}
+.dog_num_5 #wings2{
+	left: 435px;
+	top: 358px;
+}
+.dog_num_5 #dog2{
+	left: 473px;
+	top: 323px;
+}
+.dog_num_5 #cloud2{
+	left: 475px;
+	top: 390px;
+}
+.dog_num_5 #wings3{
+	left: 268px;
+	top: 391px;
+}
+.dog_num_5 #dog3{
+	left: 306px;
+	top: 357px;
+}
+.dog_num_5 #cloud3{
+	left: 308px;
+	top: 423px;
+}
+.dog_num_5 #wings4{
+	left:379px;
+	top:481px;
+}
+.dog_num_5 #dog4{
+	left: 416px;
+	top: 447px;
+}
+.dog_num_5 #cloud4{
+	left: 419px;
+	top: 513px;
+}
+.dog_num_5 #wings5{
+	left: 223px;
+	top: 526px;
+}
+.dog_num_5 #dog5{
+	left: 260px;
+	top: 492px;
+}
+.dog_num_5 #cloud5{
+	left: 263px;
+	top: 558px;
+}
